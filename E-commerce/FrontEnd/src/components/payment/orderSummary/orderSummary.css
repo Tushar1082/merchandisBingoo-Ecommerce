@@ -1,0 +1,141 @@
+#mainOrderSummary
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#orderSummaryHead{
+    margin-bottom: 20px;
+    font-family: 'Berkshire Swash', serif;
+}
+#orderOrderSummary{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+#orderImgBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#orderImgBtn div:last-child{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#orderImgBtn div:last-child button{
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 11px;
+    cursor: pointer;
+}
+#orderImgBtn div:last-child button:active{
+    background-color: rgb(244, 244, 244);
+}
+#orderNamePrice{
+    display: flex;
+    flex-direction: column;
+}
+#orderNamePrice h2, #orderNamePrice p, #orderNamePrice del, #orderNamePrice span{
+    font-family: 'Berkshire Swash', serif;
+}
+#orderPrice{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#orderPrice button{
+    align-self: flex-start;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    color: tomato;
+}
+#orderCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#totalAmountBtnDiv{
+    margin-top: 30px;
+    text-align: center;
+}
+#totalAmountBtnDiv button{
+    padding: 1.1rem 5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #7a38da;
+    color: white;
+    cursor: pointer;
+    font-family: 'Berkshire Swash', serif;
+    font-size: 1.2rem;
+}
+#OIBFDiv{
+    width: 100px;
+}
+#totalCart{
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+}
+#priceheadDiv{
+ border-bottom: 2px dashed lightgrey;
+}
+#priceheadDiv h1{
+    color: grey;
+}
+
+@media (max-width:699px){
+    #mainOrderSummary{
+        display: block;
+    }
+    #orderSummaryHead{
+        font-size: 1.5rem;
+    }
+    #orderOrderSummary{
+        padding: 10px;
+    }
+    #orderImgBtn{
+        align-items: center;
+        justify-content: center;
+    }
+    #OIBFDiv{
+        width: 50px;
+    }
+    #orderNamePrice h2{
+        font-size: 1rem;
+    }
+    #orderNamePrice p{
+        font-size: 0.8rem;
+    }
+    #orderPrice button{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    #totalCart{
+        margin: 20px;
+        margin-bottom: 6rem;
+        box-shadow: none;
+    }
+}
+@media (min-width:699px) and (max-width:1000px) {
+    #totalAmountBtnDiv button{
+        padding: 10px 20px;
+    }
+    #totalCart{
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 2px lightgrey;
+    }
+    #priceheadDiv h1{
+        font-size: 1.5rem;
+    }
+    #mainOrderSummary{
+        flex: 1;
+    }
+}

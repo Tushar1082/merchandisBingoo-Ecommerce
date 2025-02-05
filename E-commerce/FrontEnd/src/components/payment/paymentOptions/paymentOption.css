@@ -1,0 +1,155 @@
+.braintree-form__flexible-fields{
+    display: block;
+    flex-direction: column;
+    justify-content: unset;
+}
+.braintree-sheet__content--form .braintree-form__flexible-fields .braintree-form__field-group {
+    flex-grow: 1;
+    flex-basis: unset;
+}
+
+#mainPaymentOptions{
+    display: flex;
+    /* position: relative; */
+}
+/* #bgImgPayOption{
+    height: 100vh;
+    padding: 20px;
+}
+#bgImgPayOption img{
+    height: 100%;
+} */
+#paymentOptionsDiv{
+    height: max-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2% 4%;
+    /* position: fixed; */
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 15px;
+}
+.headPaymentOption{
+    font-family: 'lora', serif;
+    text-align: center;
+}
+#failTransHead{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+#payButtonDiv{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#payButtonDiv button{
+    background: linear-gradient(157deg, #C11C84, #f1f5ff);
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-family: emoji;
+}
+#mainPO{
+    margin-top: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#divPM{
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    font-family: "Roboto Slab", serif;
+}
+#logoPO{
+    background-color: white;
+    border-radius: 50%;
+    padding: 28% 5%;
+}
+#logoPO img{
+ height: 4rem;
+ margin-bottom: 1rem;
+}
+#successPayDiv{
+    width: 25%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media (max-width:699px) {
+    /* #bgImgPayOption{
+        width: 325px;
+    }
+    #bgImgPayOption img{
+        width: 100%;
+        height: unset;
+    } */
+    #successPayDiv{
+        width: 70%;
+    }
+    /* #paymentOptionsDiv{
+        width: 100%;
+        margin: 0px 16px;
+        position: static;
+        transform: unset;
+    } */
+    .logoNav{
+        margin-bottom: unset;
+    }
+    .logoNav img{
+        height: 1.5rem;
+    }
+    .headPaymentOption{
+        font-size: 2rem;
+    }
+    #mainPO{
+        margin-top: 0.5rem;
+    }
+    #divPM{
+        font-size: 1.3rem;
+    }
+    #payButtonDiv h4{
+        font-size: 17px;
+    }
+    #payButtonDiv button{
+        font-size: 0.5rem;
+    }
+    /* #logoPO{
+        padding: 20% 5%;
+    } */
+    #logoPO img{
+        height: 3rem;
+        margin-bottom: unset;
+    }
+    #failTransHead{
+        font-size: unset;
+    }
+    #failTransDiv{
+        margin-bottom: 6rem;
+    }
+}
+
+@media (min-width:699px) and (max-width:1000px){
+    #mainPaymentOptions{
+        flex:1;
+        justify-content: center;
+        align-items: center;
+    }
+    #logoPO{
+        padding: 25% 5%;
+    }
+}

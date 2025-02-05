@@ -1,0 +1,136 @@
+#mainMyAccount{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    margin: 20px;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+#mainMyAccountDiv{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0px 0px 10px -4px black; */
+}
+#mainMyAccountDiv button{
+    align-self: center;
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #7a38da;
+    font-size: 15px;
+}
+#mainMyAccountDiv input:not(input[type="radio"]){
+    width: 20rem;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    /* box-shadow: 3px 3px 4px -3px #000000d9; */
+    box-shadow: 1px 1px 5px -1px;
+    border: none;
+}
+#saveNewChanges{
+    text-align: center;
+}
+#saveNewChanges button{
+    font-size: 1.5rem;
+    font-weight: 100;
+    background: linear-gradient(90deg, orange, red);
+    color: white;
+    padding: 0.2rem 5rem;
+    border-radius: 10px;
+    box-shadow: 0px 12px 11px -9px #ff4b4b;
+}
+#mainUserProfileMyAccount{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#userProfileMyAccount{
+    display: inline-flex;
+    position: relative;
+    width: max-content;
+}
+#userProfileMyAccount div:first-child{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 11px 5px lightgrey;
+}
+#userProfileMyAccount div:last-child{
+    position: absolute;
+    top: 60%;
+    right: 0;
+    background: linear-gradient(90deg, orange, red);
+    border-radius: 50%;
+    padding: 5px 4px;
+    display: flex;
+    box-shadow: 0px 0px 3px 0px orangered;
+}
+#editImgMyAccount{
+    height: 1.1rem;
+    align-self: center;
+    background: linear-gradient(90deg, orange, red);
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#maleDiv{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+    cursor: pointer;
+}
+#femaleDiv{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+    cursor: pointer;
+}
+#myAccBgImg{
+    width: 40rem;
+}
+#myAccBgImg img{
+    width: 100%;
+    margin-top: 5rem;
+}
+#changePassDiv button{
+    color: white;
+    padding: 8px 10px;
+    border-radius: 30px;
+    box-shadow: 0px 12px 11px -9px #ff4b4b;
+    background: linear-gradient(90deg, orange, red);
+    cursor: pointer;
+}
+#changePassDiv div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1.3rem;
+}
+@media (max-width:1000px){
+    #myAccBgImg{
+        display: none;
+    }
+    #mainMyAccountDiv input:not(input[type="radio"]){
+        width: auto;
+    }
+}

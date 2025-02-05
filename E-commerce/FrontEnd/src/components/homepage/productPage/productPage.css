@@ -1,0 +1,302 @@
+#mainProductPage{
+    display: flex;
+    margin: 50px 15px;
+}
+#filPhone{
+    align-items: center;
+    gap: 5px;
+    display: none;
+}
+#filPhone img{
+    width: 20px;
+}
+.filterDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: fit-content;
+    padding-bottom: 40px;
+    position: sticky;
+    top: 80px;
+    box-shadow: -2px 1px 10px -2px;
+    border-radius: 6px;
+}
+#priceFilter{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#priceFilter h3{
+    font-family: 'Lora', serif;
+}
+#priceFilterDiv{
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#priceFilter div:last-child{
+    width: 170px;
+    display: flex;
+    gap: 10px;
+}
+#priceFilter input{
+    width: 40%;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 0px 3px 1px #00000061;
+}
+#priceFilter button{
+    border: none;
+    box-shadow: 0px 0px 2px 1px lightgrey;
+    border-radius: 5px;
+    background: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Chrome, Safari, Edge, Opera */
+#priceFilter input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#priceFilter p:hover{
+    color: blueviolet;
+    cursor: pointer;
+    font-weight: bold;
+}
+#brandFilter{
+    display: flex;
+    flex-direction: column;
+    width:max-content;
+    gap: 10px;
+    cursor: pointer;
+}
+#brandFilter h3{
+    font-family: 'Lora', serif;
+}
+#brandFilter label:hover{
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+#brandFilter input[type="search"]{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #00000099;
+}
+#customerReviewFilterDiv{
+    display: flex;
+    flex-direction: column;
+    width:max-content;
+    gap: 10px;
+}
+#customerReviewFilterDiv div{
+    display: flex;
+    padding: 0px 5px;
+}
+#customerReviewFilterDiv div:hover{
+    transition: 0.2s ease-out;
+    box-shadow: 0px 0px 3px 0px gold;
+    border-radius: 5px;
+    scale: 1.05;
+    cursor: pointer;
+}
+#customerReviewFilterDiv h3{
+    font-family: 'Lora', serif;
+}
+#sortByFilterDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+}
+#sortByFilterDiv h3{
+    font-family: 'Lora', serif;
+}
+#sortByFilterDiv button{
+    cursor: pointer;
+    border: 2px solid black;
+    background: none;
+    padding: 5px 40px;
+    color: black;
+    font-family: 'Lora';
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+#sortByFilterDiv button:hover{
+    color: red;
+}
+#categoryFilterDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+}
+#categoryFilterDiv label{
+    cursor: pointer;
+}
+#productPageDiv{
+    border: 5px solid;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#extraSortDiv{
+    display: flex;
+    gap: 3rem;
+    margin-left: 50px;
+}
+#extraSortDiv h2{
+    font-weight: 900;
+    font-family: 'Cinzel Decorative', serif;
+}
+#extraSortDiv button{
+    border: none;
+    background-color: unset;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Cinzel Decorative', serif;
+}
+#extraSortDiv button::before{
+    content:"";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 0;
+    background: gold;
+    border-radius: 50px;
+    transition: width 0.2s ease;
+}
+#extraSortDiv button:hover::before{
+    width: 96%;
+}
+#PageChangeDiv{
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    align-items: center;
+}
+#PageChangeDiv div{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    color: dodgerblue;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px 2px lightgrey;
+    position: relative;
+}
+#PageChangeDiv img{
+    cursor: pointer;
+}
+#PageChangeDiv span{
+    position: absolute;
+    top: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    font-weight: 100;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 5px;
+    transition: 0.5s opacity;
+    opacity: 0;
+}
+#PageChangeDiv div:hover span{
+    opacity: 1;
+}
+#pIDetailDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+#comNameProductList{
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: smaller;
+    font-family: 'Cinzel Decorative', serif
+}
+#moreComName{
+    border: 2px solid black;
+    color: black;
+    align-self: center;
+    padding: 5px 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'Lora';
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+}
+#moreComName:hover{
+    color: red;
+}
+#productItemPP{
+    width: 250px;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: 0.3s ease-in;
+}
+#productItemPP:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width:699px) {
+    #mainProductPage{
+        margin: 20px;
+    }
+    #filPhone{
+        display: inline-flex;
+        margin: 10px;
+    }
+    .filterDiv{
+        transform: translateX(-200%);
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        top: 7rem;
+    }
+    .showFilterDiv{
+        transition: 1s ease;
+        transform: translateX(0%);
+    }
+    #extraSortDiv{
+        margin-left: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    #extraSortDiv h2{
+        font-size: 1rem;
+    }
+    #extraSortDiv button{
+        font-size: 0.7rem;
+    }
+    #productItemPP{
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+}

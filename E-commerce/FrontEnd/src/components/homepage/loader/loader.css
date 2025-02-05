@@ -1,0 +1,15 @@
+#loadingDiv{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 1px black;
+    z-index:2;
+    padding: 10px 20px;
+}
+#loadingDiv img{
+    height: 100%;
+}

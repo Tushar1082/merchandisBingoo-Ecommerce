@@ -1,0 +1,117 @@
+#deliveryMain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+#homeAddressDelivery{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#homeAddressCon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    visibility:hidden;
+}
+#workAddressDelivery{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#workAddressCon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    visibility:hidden;
+}
+#addressDivDelivery{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 4rem;
+    height: fit-content;
+}
+#addressDivDelivery:active{
+    border:3px solid blueviolet;
+}
+#createNewAdd{
+    display: flex;
+    align-items: center;
+    border: 2px dashed lightgrey;
+    border-radius: 10px;
+    padding: 9px;
+    width: max-content;
+    padding-right: 5rem;
+    gap: 10px;
+    cursor: pointer;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#createNewAdd h3{
+    font-family: "Cinzel Decorative", serif;
+}
+#HomeAddHead{
+    font-family: "Cinzel Decorative", serif;
+}
+#WorkAddHead{
+    font-family: "Cinzel Decorative", serif;
+}
+#createNewAdd img{
+    height: 40px;
+}
+#userNameAdd{
+    font-weight: bold;
+    font-family: "Cinzel Decorative", serif;
+}
+@media (max-width:699px) {
+    #HomeAddHead,#WorkAddHead{
+        font-size: 15px;
+    }
+    #createNewAdd img{
+        height: 30px;
+    }
+    #createNewAdd h3{
+        font-size: 15px;
+    }
+    #homeAddressCon{
+        padding: unset !important;
+    }
+    #addressDivDelivery{
+        padding: 15px;
+    }
+    #userNameAdd{
+        font-size: 15px;
+    }
+    #addressDivDelivery p{
+        font-size: 13px;
+    }
+    #deliveryMain{
+        height: 45vh;
+    }
+}
+@media (min-width:699px) and (max-width:1000px){
+    #deliveryMain{
+        flex: 1;
+    }
+}

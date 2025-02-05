@@ -1,0 +1,256 @@
+/* Slider */
+#sliderCP{
+    overflow: hidden;
+    position: relative;
+    height: 30rem;
+}
+#sliderCP img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    transition: 1s;
+}
+#sliderBtnCP{
+    position: relative;
+    top: 30%;
+}
+.btn1S{
+    position: absolute;
+    left: 10px;
+    font-size: 100px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px black;
+    cursor: pointer;
+}
+.btn1S:active{
+    box-shadow: 0px 0px 3px 2px black;
+}
+.btn2S{
+    position: absolute;
+    right: 10px;
+    font-size: 100px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px black;
+    cursor: pointer;
+}
+.btn2S:active{
+    box-shadow: 0px 0px 3px 2px black;
+}
+
+/* categories of women */
+#categoryConCP{
+    margin-bottom: 40px;
+}
+#categoryHeadingCP{
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+#CategoryBtnDivCP{
+    text-align: center;
+    margin-top: 3rem;
+}
+#CategoryBtnDivCP a{
+    text-decoration: none;
+}
+#CategoryBtnDivCP button{
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: white;
+    font-weight: bold;
+    color: deeppink;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px black;
+    font-family: 'Lora', serif;
+}
+#categoriesMainCP{
+    margin-top: 20px;
+}
+#categoriesCP{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+#imgDivCP{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 0px 5px 4px lightgrey;
+} 
+#categoriesCP img{
+    width: 100%;
+}
+#categoriesCP img:hover{
+    transition: 0.5s;
+    scale: 1.1;
+}
+#categoriesCP h1{
+    text-align: center;
+}
+#categoryDivCP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#categoryDivCP a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#saleBannerCP{
+    height: 500px;
+    text-align: center;
+    margin: 20px;
+}
+#saleBannerCP img{
+    height: 100%;
+}
+#productsHead{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 30px;
+    margin-top: 0px;
+}
+#productsHead span{
+    font-size: 20px;
+}
+#productsConCP{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#productItemCP{
+    width: 250px;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+#productItemCP:hover{
+    transform: scale(1.03);
+}
+#pIWImgDiv{
+    height: 250px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#pIWImgDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+#pIWDetailDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#addTofavCP{/*CP is category page*/
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    top: 10px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 0px black;
+}
+#addTofavCP img{
+    width: 100%;
+}
+
+
+@media (max-width:699px){
+    #sliderCP{
+        height: 15rem;
+    }
+    #sliderCP img{
+        object-fit: cover;
+    }
+    #sliderBtnCP{
+        top: 40%;
+    }
+    .btn1S,.btn2S{
+        font-size: 40px;
+        padding: 0px 20px;
+        border-radius: 50%;
+    }
+    #categoriesCP{
+        gap: 10px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    #imgDivCP
+    {
+        height: 100px;
+        width: 100px;
+        box-shadow: 0px 0px 3px 2px lightgrey;
+    }
+    #saleBannerCP{
+        width: 20rem;
+        margin: 3rem auto;
+        height: unset;
+    }
+    #saleBannerCP img{
+        height: unset;
+        width: 100%;
+    }
+    #productsHead h1{
+        font-size: 2rem;
+    }
+    #categoryHeadingCP{
+        font-size: 2rem;
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+    #productItemCP{
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+        position: relative;
+    }
+    #CategoryBtnDivCP{
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width:1000px) and (min-width:700px){
+    #categoriesCP
+    {
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap: 20px;
+    }
+}
+@media (max-width:1300px) and (min-width:1001px){
+    #imgDivCP{
+        height: 150px;
+        width: 150px;
+    }
+}

@@ -1,0 +1,290 @@
+#mainAddAddress{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 20px;
+}
+#mainAddAddressDiv{
+    padding: 20px;
+}
+#addressCon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+#addAddressDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed grey;
+    gap: 20px;
+    padding: 50px 60px;
+    height: max-content;
+    cursor: pointer;
+}
+#addAddressDiv img{
+    animation: spin 1s ease;
+    transition: transform 1s ease;
+}
+@keyframes spin {
+    0%{
+     rotate: -360deg;   
+    }    
+    100%{
+        rotate: 0deg;
+    }
+}
+#addAddressDiv.rotated img{
+    transform: rotate(360deg);
+}
+#newAddressDiv{
+    box-shadow: 0px 0px 2px 2px lightgrey;
+    background-color: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    transform: translate(-10px, -10px);
+    border-radius: 5px;
+    display: none;
+}
+#firstFormAddAddress{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 55%;
+    gap: 10px;
+}
+#nameAddAdress{
+    padding: 10px 15px;
+    width: 15rem;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#mobileNumAddAddress{
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#pincodeAddAddress{
+    padding: 10px 15px;
+    width: 15rem;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#localityAddAddress{
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+#secondFormAddAddress{
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#secondFormAddAddress input:first-child{
+    flex-grow: 1;
+    padding: 10px 15px;
+    width: 8rem;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#selectAdd{
+   flex-grow: 1;
+   outline:none; 
+   border: 1px solid;
+   border-radius: 5px;
+   padding: 2px;
+   cursor: pointer;
+   width: 10rem;
+}
+#landmarkAdd{
+    flex-grow: 1;
+    padding: 10px 15px;
+    width: 12rem;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#secondFormAddAddress input:last-child{
+    flex-grow: 0;
+    padding: 10px 15px;
+    border: 1px solid;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+#addressDivAddAddress{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 4rem;
+    height: fit-content; 
+}
+#addressDivBtnDiv{
+    display: flex;
+    align-items: center;
+}
+#addressDivBtnDiv button{
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: tomato;
+    cursor: pointer;
+    margin-left: -6px;
+}
+#homeAddress{
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: none;
+}
+#workAddress{
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 10px;
+    box-shadow: none;
+}
+#saveNewAddress{
+    margin-right: 10px;
+    font-size: 20px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 0.2rem 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+#cancelNewAddress{
+    margin-right: 10px;
+    font-size: 20px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.2rem 1rem;
+    color: red;
+    font-family: 'Roboto Slab', serif;
+}
+#userNameAddAd{
+    font-weight: bold;
+    font-family: "Cinzel Decorative", serif;
+}
+#addressArea{
+    resize: none;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media (max-width:699px){
+    #mainAddAddress{
+        display: block;
+    }
+    #userInfo{
+        display: none;
+    }
+    #addressCon{
+        margin-top: 20px;
+        padding: unset;
+    }
+    #mainAddAddressDiv{
+        padding: unset
+    }
+    #addAddressDiv{
+        padding: 10px;
+        gap: 10px;
+    }
+    #addAddressDiv img{
+        width: 50px;
+    }
+    #addAddressDiv h1{
+        font-size: 10px;
+    }
+    #addressDivAddAddress{
+        gap: 5px;
+        width: 9rem;
+        padding: 10px;
+    }
+    #addressDivAddAddress p{
+        font-size: 10px;
+    }
+    #userNameAddAd{
+        font-size: 15px;
+    }
+    #addressDivBtnDiv button
+    {
+        font-size: 12px;
+    }
+
+    #newAddressDiv{
+        position: absolute;
+        top: 5rem;
+        margin: 10px;
+        left: 1px;
+        box-shadow: 0px 0px 10px 0px black;
+        transform: unset;
+    }
+    #addressArea{
+        width: 15rem;
+    }
+}
+
+@media (max-width:1000px){
+    #mainAddAddressDiv{
+        padding: 10px;
+    }
+    #addAddressDiv{
+        padding: 10px;
+    }
+    #addAddressDiv img{
+        width: 70px;
+    }
+    #addAddressDiv h1{
+        font-size: 1.5rem;
+    }
+    #addressDivAddAddress{
+        padding: 20px;
+        width: 13rem;
+        gap: 10px;
+    }
+    #newAddressDiv{
+        position: absolute;
+        left: 20px;
+        right: 20px;
+    }
+    #addressCon{
+        height: auto;
+        gap: 20px;
+    }
+    #userProfileWishlist{
+        width: 100px;
+        height: 100px;
+    }
+    #userInfo{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,7 @@
+@media (min-width:699px) and (max-width:1000px){
+    #mainApp{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}

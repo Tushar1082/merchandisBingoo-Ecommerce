@@ -1,0 +1,203 @@
+#masterMainMyOrder{
+    margin: 40px;     
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#orderCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+    padding-top: 40px;
+}
+#itemDivMyOrders{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    justify-content: space-between;
+}
+#itemDivMyOrders:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    scale:1.01;
+    cursor: pointer;
+}
+#orderSearchBar{
+    text-align: center;
+}
+#orderSearchBar input{
+    outline: none;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 50%;
+}
+#orderSearchBar button{
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid #612ab2;
+    color: white;
+    background-color: #7a38da;
+    cursor: pointer;
+}
+#orderSearchBar button:active{
+    background-color: #5513b5;
+}
+#itemImgDivMyOrders{
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    gap: 10px;
+}
+#itemImgDivMyOrders img{
+    height: 50px;
+}
+#moreItemsCountDiv{
+    align-self: center;
+    font-size: 20px;
+    box-shadow: 0px 0px 2px 1px #d3d3d370;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+}
+#mainOrderStatus{
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#mainOrderStatus div{
+    padding: 5.5px 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+#secondLinkOT{
+    color: black;
+    text-decoration: none;
+    flex-basis: 400px;
+}
+#secondLinkOTS{
+    color: black;
+    text-decoration: none;
+    flex-basis: 400px;
+}
+#secondLinkOT p:last-child{
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+}
+#userPriceOT{
+    flex-basis: 100px;
+}
+#userPriceOT p
+{
+    font-size: 1.4rem;
+    font-family: Berkshire Swash;
+}
+#imgDivOT{
+    width: 100px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+#ratingOT
+{
+    display: flex;
+    gap: 10px;
+}
+@media (max-width:699px)
+{
+    #masterMainMyOrder{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #orderSearchBar{
+        display: flex;
+    }
+    #orderSearchBar input{
+        width: 100%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    #orderSearchBar button{
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    #orderCon{
+        padding: unset;
+    }
+    #itemDivMyOrders{
+        padding: 10px;
+        align-items: center;
+        gap: 10px;
+    }
+    #imgDivOT{
+        width: 30px;
+        margin:0px 3px
+    }
+    #secondLinkOT{
+        flex-basis: unset;
+    }
+    #secondLinkOT p:first-child{
+        font-size: 10px;
+    }
+    #secondLinkOT p:last-child{
+        font-size: 7px;
+    }
+    #secondLinkOTS{
+        flex-basis: unset;
+    }
+    #secondLinkOTS p{
+        font-size: 7px;
+    }
+    #userPriceOT{
+       flex-basis: unset; 
+    }
+    #userPriceOT p{
+       font-size: 10px; 
+    }
+    #mainOrderStatus{
+        flex-basis: unset;
+        gap: 2px;
+    }
+    #mainOrderStatus div{
+        padding: 3.5px;
+    }
+    #mainOrderStatus h4{
+        font-size: 7px;
+    }
+    #ratingOT{
+        gap: 5px;
+    }
+    #ratingOT img{
+        height: 10px;
+    }
+    #ratingOT div:last-child h4{
+        font-size: 7px;
+    }
+    #itemImgDivMyOrders{
+        width: 80px;
+        justify-content: space-evenly;
+    }
+    #itemImgDivMyOrders img{
+        height: 20px;
+    }
+    #moreItemsCountDiv{
+        font-size: 6px;
+        width: 10px;
+        padding: 2px;
+    }
+}
+@media (max-width:1000px) and (min-width:700px){
+    #orderCon{
+        padding: unset;
+    }
+    #itemDivMyOrders{
+        gap: 10px;
+    }
+}

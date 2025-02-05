@@ -1,0 +1,162 @@
+#mainWishlist{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin: 20px;
+}
+#userInfo{
+    padding: 2rem 3rem;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    border-radius: 5px;
+    margin: 0px auto;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+#userProfileDivWishlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#userProfileWishlist{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 7px 3px lightgrey;
+}
+#userProfileWishlist img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#userProfileOption{
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#userProfileOption :hover{
+    transition: 0.2s ease-in-out;
+    color: red;
+}
+#userProfileOption a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+#userProfileOption img{
+    height: 20px;
+}
+#userWishlist{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    border-radius: 5px;
+}
+#tableWishlist{
+    border-collapse: separate;
+    border-spacing: 20px 30px;
+    width: 100%;
+    padding: 15px 20px;
+}
+#wishlistHeadings{
+    text-align:left;
+    font-size: 20px;
+}
+#wishlistHeadings th{
+    font-family: 'Berkshire Swash', serif;
+}
+#productWishlist{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#removeWishlistImg{
+    height: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+#removeWishlistImg:hover{
+    background: rgba(211,211,211,0.5);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+#aToCBtnWishlist{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px #7a38da94;
+    cursor: pointer;
+    /* font-family: 'Berkshire Swash', serif; */
+    font-weight: bold;
+}
+#aToCBtnWishlist:active{
+    box-shadow: 0px 0px 1px 1px #7a38da94;
+}
+#wishlistProdRow td{
+    font-family: 'Berkshire Swash', serif;
+}
+#wishlistProdRow div{
+    font-family: 'Berkshire Swash', serif;
+}
+#pricewishlist p,#pricewishlist h3,#pricewishlist del,#pricewishlist span{
+    font-family: 'Berkshire Swash', serif;
+}
+#prodNameW{
+    font-family: Lora, serif;
+    font-weight: bold;
+}
+#emptyWishDiv{
+    height: 500px;
+    text-align: center;
+}
+@media (max-width:699px) {
+    #mainWishlist{
+        display: block;
+    }
+    #tableWishlist{
+        padding: 10px;
+        border-spacing: 10px;
+    }
+    #wishlistHeadings th{
+        font-size: 15px;
+    }
+    #cartItemImg{
+        width: 40px;
+    }
+    #prodNameW{
+        font-size: 10px;
+    }
+    #pricewishlist p, #pricewishlist h3, #pricewishlist del, #pricewishlist span{
+        font-size: 7px;
+    }
+    #aToCBtnWishlist{
+        padding: 2px;
+        font-size: 8px;
+    }
+    #userWishlist{
+        display: flex;
+        justify-content: center;
+    }
+    #emptyWishDiv{
+        height: unset;
+        width: 300px;
+    }
+    #emptyWishDiv img{
+        width: 100%
+    }
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    #emptyWishDiv{
+        height: 300px;
+    }
+}

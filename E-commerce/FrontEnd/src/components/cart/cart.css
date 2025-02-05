@@ -1,0 +1,336 @@
+#mainCart{
+    margin: 20px;
+}
+#navCartPage{
+    width: 100%;
+    height: 50px;
+    background: #7a38da;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Berkshire Swash', serif;
+}
+#navCartPage h4{
+    font-family: 'Berkshire Swash', serif;
+    font-weight: 100;
+}
+#navCartPage img{
+    animation: upDown 2s ease ;
+}
+@keyframes upDown {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform:translateY(-30%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+#mainCartPage{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2rem;
+}
+#cartItemsCon{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    min-height: 500px;
+    margin: 20px;
+}
+#tableCartPage{
+    width: 100%;
+    padding: 15px 10px;
+    border-collapse: separate;
+    border-spacing: 20px 30px;
+}
+#tableCartPage tbody tr td{
+    font-family: 'Berkshire Swash', serif;
+}
+#cartHeadings th{
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Berkshire Swash', serif;
+}
+#cartItemImg{
+    width: 100px;
+    object-fit: contain;
+}
+#productCartPage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#productCartPage div{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+#productCountDiv{
+    display: flex;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#productCountDiv button:first-child{
+    border: none;
+    background-color: white;
+    border-right: 1px solid rgba(211,211,211);
+    font-size: 2rem;
+    width: 40px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+#productCountDiv button:first-child:active{
+    background-color: rgb(211, 211, 211,0.3);
+}
+#productCountDiv div{
+    width: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    align-self: center;
+    font-family: 'Lora', serif;
+}
+#productCountDiv button:last-child{
+    border: none;
+    background-color: white;
+    border-left: 1px solid rgba(211,211,211);
+    font-size: 2rem;
+    width: 40px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+#productCountDiv button:last-child:active{
+    background-color: rgb(211, 211, 211,0.3);
+}
+#removeCartImg{
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+#removeCartImg:hover{
+    background: rgba(211,211,211,0.5);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+#totalCartC{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    height: 400px;
+    width: 300px;
+    margin-top: 20px;
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+}
+#totalCartPriceDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+}
+#totalCartPriceDiv p{
+    font-family: 'Berkshire Swash', serif;
+    font-size: 1.2rem;
+}
+#totalCartBtnDiv{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+#totalCartBtnDiv button{
+    padding: 1.2rem 1rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #7a38da;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight:bold
+}
+#totalCartBtnDiv button:active{
+    background-color:#5620a4;
+}
+#totalAmountDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px dashed lightgrey;
+    padding: 15px 0px;
+}
+#totalAmountDiv h2{
+  font-family: 'Berkshire Swash', serif;
+}
+#totalAmountDiv p{
+    font-family: 'Berkshire Swash', serif;
+    font-size: 1.2rem;
+}
+#youSaveDiv{
+    border-top: 2px dashed lightgrey;
+    text-align: center;
+    padding-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+#youSaveDiv p{
+    font-family: 'Berkshire Swash', serif;
+    font-weight: 100;
+}
+#firstHeadC{
+    margin: 10px 0px;
+    font-family: "Berkshire Swash", serif;
+}
+#offC{
+    color: green;
+    font-weight: bold;
+    font-family: "Berkshire Swash", serif;
+}
+#totalC{
+    text-align: start;
+    font-weight: bold;
+    font-size: larger;
+}
+#emptyDivC{
+    height: 500px;
+    text-align: center;
+}
+
+
+@media (max-width:1199px)
+{
+    #mainCart{
+        margin: unset;
+    }
+    #navCartPage{
+        margin: 10px;
+        height: auto;
+        width: auto;
+    }
+    #mainCartPage{
+        display: flex;
+        gap: unset;
+        flex-direction: column;
+        margin: 20px;
+    }
+    #firstHeadC{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #cartItemsCon{
+        box-shadow: none;
+        margin: unset;
+    }
+    #tableCartPage{
+        padding: unset;
+        border-collapse: unset;
+        border-spacing: unset;
+    }
+    #cartHeadings{
+        display: none;
+    }
+    #cartItemBody{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #cartItemBody td:first-child{
+        display: none;
+    }
+    #productCartPage img{
+        width: 40px;
+    }
+    #productCartPage div:last-child{
+        font-size: unset;
+    }
+    #offC{
+        font-size: 12px;
+    }
+    #priceC{
+        font-size: 15px;
+    }
+    #productCountDiv button:first-child{
+        font-size: 10px;
+        width: unset;
+        padding: 5px 10px;
+    }
+    #productCountDiv div{
+        font-size: 10px;
+        width: unset;
+        padding: 5px 10px;
+    }
+    #productCountDiv button:last-child{
+        font-size: 10px;
+        width: unset;
+        padding: 5px 10px;
+    }
+    #removeCartImg{
+        height: 25px;
+        padding: unset;
+    }
+    #totalCartC{
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    #totalCartC h1{
+     font-size: 25px;   
+    }
+    #totalCartPriceDiv p{
+        font-size: 15px;
+    }
+    #totalAmountDiv h2{
+        font-size: 20px;
+    }
+    #totalCartBtnDiv button{
+        font-size: 0.7rem;
+    }
+    #cartItemsC{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px dashed lightgrey;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+    }
+    #totalC::before{
+        content: "Total:- ";
+    }
+    #removeConC:before{
+        content:"remove";
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    #removeConC{
+        display: flex;
+        flex-direction: column-reverse;
+        width: max-content;
+        align-items: center;
+        gap: 2px;
+    }
+    #emptyDivC{
+        height: unset;
+    }
+    #emptyDivC img{
+        width: 300px;
+    }
+    #cartItemsCon{
+        min-height: unset;
+    }
+}
+@media (min-width:700px) and (max-width:1199px){
+    #mainCartPage{
+        flex-direction: row;
+        gap: unset;
+    }
+    #totalCartC{
+        height: max-content;
+        margin: 20px auto;
+    }
+    #emptyDivC img{
+        width: 500px;
+    }
+    #mainCart{
+        flex:1
+    }
+}

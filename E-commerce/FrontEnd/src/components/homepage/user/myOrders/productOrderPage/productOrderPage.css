@@ -1,0 +1,246 @@
+#mainPOP{
+    margin: 20px;
+}
+#downloadInvoice{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#downloadInvoice button{
+    /* color: grey; */
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+#orderItemProductOrderPage{
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 0px 5px 3px lightgrey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5rem;
+}
+#deliveryAddressProductOrder{
+    border-right: 2px solid lightgrey;
+    padding-left: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#downloadBtnDiv{
+    border: 2px solid green;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    width: max-content;
+    margin-top: 20px;
+}
+#productStatus{
+    box-shadow: 0px 0px 5px 3px lightgrey;
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#mainCancelDiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#cancelOrderBtn{
+    padding: 10px 15px;
+    border: 2px solid darkgreen;
+    color: darkcyan;
+    background: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#cancelOrderBtn:active{
+    background-color: #d3d3d32b;
+}
+#helpSupportDivProduct{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#mainOrderTrack{
+    display: flex;
+    align-items: baseline;
+    width: 60%;
+    padding-top: 30px;
+}
+#trackOrder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#trackOrder p{
+    text-align: center;
+}
+#trackLine{
+    width: 100%;
+    border: 2px dashed grey;
+}
+#customCheckBox{
+    display: flex;
+    justify-content: center;
+}
+#customCheckBox p{
+    background: #8a52db;
+    color: white;
+    width: max-content;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+#prodImgPOP{
+    height: 100px;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+#hSDPPhone{
+    display: none;
+}
+#productsHeadPOP{
+    margin-bottom: 30px;
+}
+#imgPOP{
+    text-align:center;
+    height:5rem;
+    flex-grow:1;
+}
+#IIDMO{
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    gap: 10px;
+}
+#IIDMO img {
+    height: 35px;
+}
+
+
+
+
+@media (max-width:1000px){
+    #mainPOP{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    #orderItemProductOrderPage{
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #deliveryAddressProductOrder{
+        border-right: unset;
+    }
+    #deliveryAddressProductOrder h2{
+        font-size: 15px;
+    }
+    #deliveryAddressProductOrder h3{
+        font-size: 10px;
+    }
+    #deliveryAddressProductOrder p{
+        font-size: 10px;
+    }
+    #downloadBtnDiv{
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #downloadBtnDiv img{
+        height: 15px;
+    }
+    #downloadBtnDiv h3{
+        font-size: 10px;
+    }
+    #mainPOPItems{
+        margin: 10px;
+    }
+    #productsHeadPOP{
+        margin-bottom: 10px;
+    }
+    #orderItemInvoice{
+        flex-basis:9rem;
+        padding: 15px;
+        box-shadow: unset;
+        border-radius: unset;
+    }
+    #imgPOP{
+        height: 3rem;
+    }
+    #orderItemInvoice h4{
+        font-size: 12px;
+    }
+    #orderItemInvoice p{
+        color: red;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    #orderItemPreviewDiv{
+        gap: 10px;
+    }
+
+    #prodImgPOP{
+        height: 30px;
+        padding: unset;
+    }
+    #trackOrder p{
+        font-size: 8px;
+    }
+    #customCheckBox p{
+        padding: 1px 4px;
+    }
+    #cancelOrderBtn{
+        padding: 5px;
+        font-size: 8px;
+    }
+    #helpSupportDivProduct{
+        display: none;
+    }
+    #hSDPPhone{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+        align-items: center;
+    }
+    #hSDPPhone img{
+        height: 30px;
+    }
+    #hSDPPhone p{
+     font-size: 13px;
+    }
+    #productStatus{
+        padding: 10px 5px;
+        gap: 5px;
+    }
+    #productsHeadPOP h2{
+        font-size: 15px;
+    }
+    #IIDMO{
+        width: 70px;
+    }
+    #IIDMO img {
+        height: 17px;
+    }
+}
+@media (max-width:699px) {
+    #orderItemInvoice{
+        flex-basis: 7rem;
+    }
+}

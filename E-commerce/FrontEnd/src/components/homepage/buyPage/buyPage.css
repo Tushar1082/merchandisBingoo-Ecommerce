@@ -1,0 +1,667 @@
+#mainBuyPage{
+    padding: 30px;
+}
+#productDivBuyPage{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+}
+#imagesDivBuyPage{
+    display: inline-flex;
+    margin: 10px;
+    gap: 10px;
+    height: fit-content;
+    position: sticky;
+    top: 55px;
+}
+#allImgBuyPage div{
+    width: 60px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#allImgBuyPage img{
+    width: 100%;
+}
+#selectedImgDivBuyPage{
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+}
+#selectedImg{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+#likeBtnDivBuyPage{
+    position: absolute;
+    width: 26px;
+    right: 10px;
+    top: 10px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 0px black;
+}
+#likeBtnDivBuyPage:hover{
+    cursor: pointer;
+}
+#likeBtnDivBuyPage img{
+    width: 100%;
+}
+
+#mainDetailBuyPage{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#comNameBuyPage p{
+    font-family: 'Cinzel Decorative';
+    font-weight: bold;
+    color: red;
+}
+#comNameBuyPage h2{
+    font-family: 'Lora', serif;
+}
+#priceDivBuyPage{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#priceDivBuyPage p{
+    color: green;
+    font-family: 'Berkshire Swash', serif;
+}
+#priceDivBuyPage del{
+    color: grey;
+    font-family: 'Berkshire Swash', serif;
+}
+#priceDivBuyPage h3{
+    color: black;
+    font-family: 'Berkshire Swash', serif;
+}
+#priceDivBuyPage span{
+    color: green;
+    font-family: 'Berkshire Swash', serif;
+}
+#categoryNameDiv p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+#ratingDiv{
+    margin-top: 0.3rem;
+}
+#mainBtnBuyPage{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+#countBtnBuyPage{
+    display: flex;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#countBtnBuyPage div{
+    width: 40px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+}
+#firstBtnCount{
+    border: none;
+    background-color: white;
+    border-right: 1px solid rgba(211,211,211);
+    font-size: 2rem;
+    width: 40px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+#firstBtnCount:active{
+    background-color: #d3d3d363;
+}
+#secondBtnCount{
+    border: none;
+    background-color: white;
+    border-left: 1px solid rgba(211,211,211);
+    font-size: 2rem;
+    width: 40px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+#secondBtnCount:active{
+    background-color: #d3d3d363;
+}
+#btnBuyPage{
+    display: flex;
+    gap: 10px;
+}
+#btnBuyPage button:first-child{
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(90deg, orange,red);
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 4px -1px orangered;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+#btnBuyPage button:last-child{
+    font-size: 2rem;
+    background-color: white;
+    color: orangered;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid #f9a100;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+#desBtnBuyPage{
+    width: 80%;
+    margin-bottom: 20px;
+}
+#desBtnBuyPage h1{
+    font-family: 'Lora', serif;
+    margin-bottom: 1rem;
+}
+#keyFeaturesBuyPage{
+    width: 80%;
+}
+
+#mainRatingBuyPage{
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    padding: 20px;
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+#cusReviewsBuyPage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    position: sticky;
+    top: 20px;
+    height: max-content;
+}
+
+#cusRatingBuyPage{
+    display: flex;
+    gap: 10px;
+}
+#starBuyPage,#ratingWidthBuyPage,#ratingPerBuyPage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+}
+#ratingWidthBuyPage div{
+    border: 2px solid #efbe04;
+    width: 200px;
+    height: 100%;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+#fiveStarBuyPage div,#fourStarBuyPage div,#threeStarBuyPage div,#threeStarBuyPage div,#twoStarBuyPage div,#oneStarBuyPage div
+{
+    border: none;
+    width: 0;
+    transition: 2s width ease;
+}
+#reviewBuyPage{
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#reviewBuyPage button{
+    margin-bottom: 15px;
+    border: none;
+    background: none;
+    box-shadow: 0px 0px 5px 2px lightgrey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#ratingConBuyPage{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-height: 125rem;
+    overflow-y: auto;
+}
+/* Optional: Customize the scrollbar */
+#ratingConBuyPage::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+#ratingConBuyPage::-webkit-scrollbar-thumb {
+    background-color: lavender; /* Set the color of the scrollbar thumb */
+    border-radius: 10px;
+  }
+  
+#ratingConBuyPage::-webkit-scrollbar-track {
+    background-color: white; /* Set the color of the scrollbar track */
+  }
+#ratingsBuyPage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#userDivBuyPage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+#profileImgRating{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+#profileImgRating img{
+    width: 100%;
+}
+
+#mainRateProduct{
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#firstDivRateProduct{
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#firstDivRateProduct img{
+    height: 35px;
+    width: 35px;
+}
+#starRateProduct{
+    width: fit-content;
+}
+#starRateProduct div{
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: lightgray;
+    cursor: pointer;
+    float: right;
+}
+#starRateProduct div:hover,
+#starRateProduct div:hover ~ div {
+    background-color: #fdd341;
+}
+
+#secDivRateProduct{
+    padding: 25px 15px;
+    padding-top: 0px;
+}
+#secDivRateProduct h1{
+    margin-bottom: 20px;
+}
+#descDivRateProduct{
+    border: 1px solid lightgrey;
+    padding: 25px 15px;
+}
+#descDivRateProduct p{
+    font-family: 'Cinzel Decorative';
+    font-weight: bold;
+    font-size: larger;
+}
+#descDivRateProduct textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px 0px;
+    width: 100%;
+    font-size: 1rem;
+}
+#titleDivRateProduct{
+    border: 1px solid lightgrey;
+    padding: 25px 15px;
+}
+#titleDivRateProduct p{
+    font-family: 'Cinzel Decorative';
+    font-weight: bold;
+    font-size: larger;
+}
+#titleDivRateProduct textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px 0px;
+    width: 100%;
+    max-height: 50px;
+    font-size: larger;
+}
+#nameDivRateProduct{
+    border: 1px solid lightgrey;
+    padding: 25px 15px;
+}
+#nameDivRateProduct p{
+    font-family: 'Cinzel Decorative';
+    font-weight: bold;
+    font-size: larger;
+}
+#nameDivRateProduct input{
+    border: none;
+    outline: none;
+    font-size: large;
+    margin-top: 10px;
+}
+#uploadImgRateProduct{
+    margin: 15px 0px;
+    cursor: pointer;
+    display: inline-flex;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#uploadImgRateProduct:hover{
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(173, 216, 230,0.6);
+}
+#reviewImgRateProduct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#reviewImgRateProduct img{
+    width: 200px;
+}
+#reviewImgCon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 10px;
+}
+#btnDivRateProduct{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+}
+#btnDivRateProduct button
+{
+    border: none;
+    background: none;
+    color: #04b504;
+    font-weight: bold;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px dodgerblue;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+#similarProductDivCon{
+    padding: 20px;
+}
+#similarProductDiv{
+    background: white;
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    padding-bottom: 10px;
+}
+#similarProductDivHeading{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: 'Berkshire Swash', serif;
+    font-weight: 100;
+}
+#RTPB{
+    font-family: 'Lora', serif;
+}
+#RRB{
+    font-family: 'Lora', serif;
+}
+#likeBtnBuyPage{
+    box-shadow: 0px 0px 3px 2px lightgrey;
+    border-radius: 50%;
+    width: 25px;
+    padding: 5px;
+}
+#emptyReviewDiv{
+    text-align: center;
+    height: 100%;
+}
+#emptyReviewDiv img{
+    width: 21rem;
+}
+
+@media (max-width:400px)
+{
+    #emptyReviewDiv img{
+        width: 15rem;
+    }
+}
+@media (max-width:699px){
+    #mainBuyPage{
+        padding: unset;
+    }
+    #productDivBuyPage{
+        display: block;
+        box-shadow: unset;
+    }
+    #imagesDivBuyPage{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+        height: fit-content;
+        position: static;
+    }
+    #allImgBuyPage
+    {
+        display: flex;
+        gap: 20px;
+        margin: 10px;
+    }
+    #allImgBuyPage div{
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #allImgBuyPage img{
+        height: 100%;
+    }
+    #selectedImgDivBuyPage{
+        width: max-content;
+        height: unset;
+    }
+    #selectedImg{
+        height: 300px;
+        width: 300px;
+    }
+    #likeBtnDivBuyPage{
+        width: 20px;
+    }
+    #comNameBuyPage h2{
+        font-size: 1.3rem;
+    }
+    #priceDivBuyPage p{
+        font-size: 1.2rem;
+    }
+    #priceDivBuyPage h3{
+        font-size: 1.3rem;
+    }
+    #btnBuyPage button:first-child{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    #btnBuyPage button:last-child{
+        font-size: 1.5rem;
+    }
+    #desBtnBuyPage{
+        width: unset;
+    }
+    #desBtnBuyPage h1{
+        font-size: 1.6rem;
+    }
+    #mainRatingBuyPage{
+        flex-direction: column;
+    }
+    #cusReviewsBuyPage{
+        position: static;
+        top: 60px;
+    }
+    #cusReviewsBuyPage h1{
+        font-size: 1.5rem;
+    }
+    #ratingWidthBuyPage div{
+        width: 170px;
+    }
+    #reviewBuyPage button{
+        font-size: 1rem;
+    }
+    #RTPB{
+        font-size: 1rem;
+    }
+    #RRB{
+        font-size: 1.5rem;
+    }
+    #mainRateProduct{
+        padding: 10px;
+        margin: 10px;
+    }
+    #firstDivRateProduct h1{
+        font-size: 1.7rem;
+    }
+    #starRateProduct div{
+        width: 40px;
+        height: 40px;
+    }
+    #secDivRateProduct h1{
+        font-size: 1.5rem;
+    }
+    #descDivRateProduct p{
+        font-size: 1rem;
+    }
+    #titleDivRateProduct p{
+        font-size: 1rem;
+    }
+    #nameDivRateProduct p{
+        font-size: 1rem;
+    }
+    #reviewImgRateProduct img{
+        width: 50px;
+    }
+    #btnDivRateProduct{
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #similarProductDivHeading{
+        font-size: 2rem;
+    }
+    #likeBtnBuyPage {
+        width: 20px;
+    }
+
+    #topDealsCardItems {
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        transform: unset;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    #topDealsCardItems::-webkit-scrollbar{
+        display: none;
+    }
+    #topDealsCardItems div{
+        scroll-snap-align: center;
+    }
+}
+
+@media (min-width:700px) and (max-width:1200px){
+    #mainBuyPage
+    {
+        padding: 10px;
+    }   
+    #productDivBuyPage{
+        box-shadow: none;
+    }
+    #imagesDivBuyPage{
+        flex-direction: column-reverse;
+    }
+    #allImgBuyPage{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+    #allImgBuyPage div{
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #selectedImgDivBuyPage{
+        height: unset;
+    }
+    #selectedImg{
+        width: 300px;
+        height: 500px;
+    }
+    #btnBuyPage button:first-child{
+        font-size: 1.5rem;
+    }
+    #btnBuyPage button:last-child{
+        font-size: 1.5rem;
+    }
+    #desBtnBuyPage{
+        width: unset;
+    }
+    #mainRatingBuyPage{
+        margin: 20px;
+        gap: 10px;
+    }
+    #mainRateProduct{
+        margin: 10px;
+    }
+    #ratingWidthBuyPage div{
+        width: 150px;
+    }
+    #cusReviewsBuyPage{
+        gap: 10px;
+        top: 60px;
+    }
+        #likeBtnBuyPage {
+        width: 20px;
+    }
+    #likeBtnBuyPage {
+        width: 20px;
+    }
+}

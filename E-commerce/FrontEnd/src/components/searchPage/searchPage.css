@@ -1,0 +1,57 @@
+#notFoundDiv{
+    text-align: center;
+    height: 100vh;
+}
+#notFoundDiv img{
+    height: 100%;
+}
+
+@media (max-width:699px){
+    #notFoundDiv{
+        width: 22rem;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #notFoundDiv img{
+        width: 100%;
+        height: unset;
+    }
+}
+@media (min-width:300px) and (max-width:379px){
+    #PageChangeDiv div{
+        padding: 0px 20px;
+    }
+}
+@media (max-width:1300px) and (min-width:700px){
+    #extraSortDiv{
+        gap: 1rem;
+    }
+    #extraSortDiv h2{
+        font-size: 1rem;
+    }
+    #extraSortDiv button{
+        font-size: 0.8rem;
+    }
+    #notFoundDiv{
+        width: 36rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #notFoundDiv img{
+        height: unset;
+        width: 100%;
+    }
+    #productsConWomen{
+        gap: 20px;
+    }
+    #productItemWomenPP{
+        width: 200px;
+    }
+    #pIWImgDiv{
+        height: 100px;
+    }
+}
