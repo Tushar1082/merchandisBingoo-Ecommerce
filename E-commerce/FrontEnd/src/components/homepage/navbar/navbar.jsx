@@ -94,8 +94,10 @@ export default function Navbar() {
     return newStr;
   }
   async function callData(){
+    const userName = localStorage.getItem("MDB_USER_NAME");
     const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
     const token = Cookies.get("token");
+    setUser(userName);
 
     if(isUserLog!=null){
       try {
@@ -121,54 +123,41 @@ export default function Navbar() {
       }
     }
   }
-  
-   async function loginedUser(){
-    const btnDiv = logSignRef.current;
-    const loggined = logginedRef.current;
-    const userName = userNameRef.current;
-    
-    // const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
-    // const user_name = localStorage.getItem("MDB_USER_NAME");
-    const isUserLog = "tusharsharma1082@gmail.com";
-    const user_name = "Tushar Sharma";
-    setUser(user_name);
-    localStorage.setItem("MDB_USER_NAME", "Tushar Sharma");
-     localStorage.setItem("MDB_USER_EMAIL_ID","tusharsharma1082@gmail.com");
-    if(isUserLog){
-      const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}`,{
-        method:"POST",
-        headers:{
-            "Content-type":"application/json"
-        },
-        body:JSON.stringify({isUserLog})
-      });
-      const data = await res.json();
-      if(data.user){
-          btnDiv.style.display="none";
-          loggined.style.display="flex";
-          userName.textContent = "Hello, "+ firstName(data.user.name);
-          setImg(data.user.profileImg);
-          return true;
-        }else if(data.msg){
-            alert("You not singup, signup now");
-            return false;
-        }else{
-            alert("server error");
-            return false;
-        }
-    }else{
-      loggined.style.display="none";
-      return false;
-    }
-  }
+  useEffect(()=>{
+    callData();
+    async function loginedUser(){
+      const btnDiv = logSignRef.current;
+      const loggined = logginedRef.current;
+      const userName = userNameRef.current;
+      
+      const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
 
-  useEffect(async()=>{
-    const bool = await loginedUser();
-    if(bool){
-      callData();
+      if(isUserLog){
+        const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}`,{
+          method:"POST",
+          headers:{
+              "Content-type":"application/json"
+          },
+          body:JSON.stringify({isUserLog})
+        });
+        const data = await res.json();
+        if(data.user){
+            btnDiv.style.display="none";
+            loggined.style.display="flex";
+            userName.textContent = "Hello, "+ firstName(data.user.name);
+            setImg(data.user.profileImg);
+          }else if(data.msg){
+              alert("You not singup, signup now");
+
+          }else{
+              alert("server error");
+          }
+      }else{
+        loggined.style.display="none";
+      }
     }
+    loginedUser();
   },[])
-  
   function logout(){
     localStorage.removeItem("MDB_USER_NAME");
     localStorage.removeItem("MDB_USER_EMAIL_ID");
