@@ -158,9 +158,10 @@ export default function BuyPage() {
   async function alreadyWishCart(){
     // const isUserLog = localStorage.getItem("loginedUser");
     const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
+    console.log(isUserLog);
     const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}?SpecialProduct=true&&user=${isUserLog}`);
     const finalRes = await res.json();
-
+    console.log(finalRes);
     const {cartData,likeData,email} = finalRes;
     setUserEmail(email);
     setLikeBtn(likeData);
@@ -185,7 +186,7 @@ export default function BuyPage() {
       const token = Cookies.get("token");
       // const user = localStorage.getItem("loginedUser");
       // const userEmail = localStorage.getItem("MDB_USER_EMAIL_ID");
-
+      console.log(token);
       const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}/buyPage?category=${category}&&id=${id}`,{
         method:'GET',
         headers:{
@@ -193,7 +194,7 @@ export default function BuyPage() {
         }
       });
       const finalRes = await res.json();
-      
+      console.log(finalRes);
       if(finalRes.notSignUp){
         navigate("/login");
       }
