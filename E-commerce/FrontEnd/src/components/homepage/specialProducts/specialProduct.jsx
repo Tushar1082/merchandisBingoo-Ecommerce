@@ -223,7 +223,8 @@ function SpecialItem({ data,cart,index,like,category,sale,setLoading }) {
         <div id='favSpecial'>
           <img src={favorite ? 'images/favorite_full.png' : 'images/favorite.png'} onClick={addToWishList} alt="error" />
         </div>
-          <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank">
+{/*           <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank"> */}
+                      <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}}>
           <div id='con1Special'>
               <img src={currImg} alt="error" />
           </div>
@@ -238,7 +239,8 @@ function SpecialItem({ data,cart,index,like,category,sale,setLoading }) {
       </div>
       <div id='detailsConSpecial'>
         <div id='productNameSpecial'>
-        <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank" style={{textDecoration:'none', color:'black'}}>
+{/*         <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank" style={{textDecoration:'none', color:'black'}}> */}
+                  <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} style={{textDecoration:'none', color:'black'}}>
           <p id='brandNameConSpecial' >{data.companyName}</p>
           <div style={{display:"flex"}}>
             <HandleRating reviews={data.reviews} width={"25px"}/>
@@ -248,7 +250,8 @@ function SpecialItem({ data,cart,index,like,category,sale,setLoading }) {
         </Link>
         </div>
         <div id='productBtnSpecial'>
-              <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank">
+{/*               <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}} target="_blank"> */}
+                              <Link to={{pathname:"/buyPage",search:navigateTo(category,sale,data._id)}}>
                   <button id="productBtnBuySpecial">Buy</button>
               </Link>
           {visible?<button id='productBtnAddSpecial' onClick={()=>addToCart(true)}>Add to cart</button>:
