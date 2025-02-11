@@ -130,10 +130,8 @@ export default function Navbar() {
       const loggined = logginedRef.current;
       const userName = userNameRef.current;
       
-      // const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
-      const isUserLog = "tusharsharma1082@gmail.com";
-      localStorage.saveItem("MDB_USER_NAME", "Tushar Sharma");
-      localStorage.saveItem("MDB_USER_EMAIL_ID", "tusharsharma1082@gmail.com");
+      const isUserLog = localStorage.getItem("MDB_USER_EMAIL_ID");
+      // const isUserLog = "tusharsharma1082@gmail.com";
 
       if(isUserLog){
         const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}`,{
@@ -161,6 +159,8 @@ export default function Navbar() {
   }
   
   useEffect(()=>{
+    localStorage.saveItem("MDB_USER_NAME", "Tushar Sharma");
+    localStorage.saveItem("MDB_USER_EMAIL_ID", "tusharsharma1082@gmail.com");
     async function fetchData(){ 
       const bool = await callData();
       if(bool){
