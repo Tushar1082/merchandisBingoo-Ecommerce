@@ -101,7 +101,6 @@ export default function Navbar() {
 
     if(isUserLog!=null){
       try {
-        
         const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}/user?user=${isUserLog}`,{
           method:"GET",
           headers:{
@@ -110,22 +109,23 @@ export default function Navbar() {
           }
         });
         const finalRes = await res.json();
+        
         if(finalRes.Unauthorized){
           navigate("/unthorize");
         }else{
           const {cartList,wishList} = finalRes;  
           dispatch(Counting(cartList.length));
           dispatch(CountingLike(wishList.length));
+          return true;
         }
       } catch (error) {
         alert("failed to count cart and wishlist");
         console.log(error);
+        return false;
       }
     }
   }
-  useEffect(()=>{
-    callData();
-    async function loginedUser(){
+      async function loginedUser(){
       const btnDiv = logSignRef.current;
       const loggined = logginedRef.current;
       const userName = userNameRef.current;
@@ -155,9 +155,15 @@ export default function Navbar() {
       }else{
         loggined.style.display="none";
       }
+  }
+  
+  useEffect(()=>{
+    const bool = await callData();
+    if(bool){
+      loginedUser();
     }
-    loginedUser();
   },[])
+  
   function logout(){
     localStorage.removeItem("MDB_USER_NAME");
     localStorage.removeItem("MDB_USER_EMAIL_ID");
