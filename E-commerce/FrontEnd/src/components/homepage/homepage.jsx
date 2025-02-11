@@ -14,9 +14,16 @@ import orderImg from "/images/navbar/order.png";
 import logoutImg from "/images/navbar/logout.png";
 import wishlistImg from '/images/navbar/wishlistPhone.png';
 import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux';
+import { showPayment } from '../../services/actions/actions';
 
 export default function Homepage() {
-
+  const dispatch = useDispatch();
+  
+  useEffect(()=>{
+    dispatch(showPayment(false));
+  },[]);
+  
   return (
     <>
     <Navbar/>
