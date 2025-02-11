@@ -119,6 +119,10 @@ export default function ProductOrderPage() {
        {data && 
       
        <div id='deliveryAddressProductOrder'>
+          <div>
+            <h3>Purchase Date: </h3>
+            <span><i>{data[0].invoiceDate}</i></span>
+          </div>
           <h2>Delivery Address:-</h2>
           <p><span style={{fontWeight:'bold'}}>Name: </span>{data[0].address.name}</p>
           <p><span style={{fontWeight:'bold'}}>Address: </span>{data[0].address.address}</p>
