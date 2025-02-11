@@ -167,12 +167,17 @@
         width: 6rem;
     }
     #con2Special{
-        width: unset !important;
+        width: unset;
     }
     #productBtnBuySpecial{
         font-size: unset;
     }
     #productBtnAddSpecial{
         font-size: 10px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 1001px){
+    #con2Special{
+        width: unset !important;
     }
 }
