@@ -804,7 +804,19 @@ export default function BuyPage() {
   useEffect(()=>{
     ratingLoader();
   },[perStar]);
+  
+  useEffect(() => {
+    const handleBackButton = () => {
+        dispatch(showPayment(false));
+    };
 
+    window.addEventListener("popstate", handleBackButton);
+
+    return () => {
+        window.removeEventListener("popstate", handleBackButton);
+    };
+}, [dispatch]);  
+  
   return (
     <>
     <Navbar/>
