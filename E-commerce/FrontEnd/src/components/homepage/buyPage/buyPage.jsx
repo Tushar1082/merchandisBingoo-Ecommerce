@@ -40,7 +40,8 @@ export default function BuyPage() {
   const [loading,setLoading] = useState(false);
   const [sim,setSim] = useState();
   const [likeBtn,setLikeBtn] = useState();
-
+  const [reload, setReload] = useState(true);
+  
   const location = useLocation();
   const navigate = useNavigate();
   const {showP} = useSelector((state)=>state.payment);
@@ -793,7 +794,6 @@ export default function BuyPage() {
     }
  }
   useEffect(() => {
-    location.reload();
     setLoading(true);
     ratingLoader();
     callData();
@@ -803,6 +803,14 @@ export default function BuyPage() {
     })
     
   }, []);
+  
+  useEffect(()=>{
+    if(reload){
+      location.reload();
+    }
+    setReload(false);
+  },[reload]);
+  
   useEffect(()=>{
     ratingLoader();
   },[perStar]);    
