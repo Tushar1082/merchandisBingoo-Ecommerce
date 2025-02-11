@@ -794,22 +794,18 @@ export default function BuyPage() {
     }
  }
   useEffect(() => {
-    setLoading(true);
-    ratingLoader();
-    callData();
-    alreadyWishCart();
-    window.scrollTo({
-      top:0
-    })
-    
-  }, []);
-  
-  useEffect(()=>{
     if(reload){
-      location.reload();
+      setReload(false);
+      setLoading(true);
+      ratingLoader();
+      callData();
+      alreadyWishCart();
+      window.scrollTo({
+        top:0
+      })  
     }
-    setReload(false);
-  },[reload]);
+  }, [reload]);
+
   
   useEffect(()=>{
     ratingLoader();
