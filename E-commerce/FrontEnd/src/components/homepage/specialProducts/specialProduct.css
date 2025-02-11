@@ -167,7 +167,7 @@
         width: 6rem;
     }
     #con2Special{
-        width: unset;
+        width: unset !important;
     }
     #productBtnBuySpecial{
         font-size: unset;
