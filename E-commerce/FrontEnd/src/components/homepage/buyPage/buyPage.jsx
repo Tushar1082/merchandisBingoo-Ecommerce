@@ -793,8 +793,21 @@ export default function BuyPage() {
       }
     }
  }
+  // useEffect(() => {
+  //   if(reload){
+  //     setReload(false);
+  //     setLoading(true);
+  //     ratingLoader();
+  //     callData();
+  //     alreadyWishCart();
+  //     window.scrollTo({
+  //       top:0
+  //     })  
+  //   }
+  //   console.log(reload);
+  }, [reload]);
   useEffect(() => {
-    if(reload){
+    // if(reload){
       setReload(false);
       setLoading(true);
       ratingLoader();
@@ -803,10 +816,15 @@ export default function BuyPage() {
       window.scrollTo({
         top:0
       })  
-    }
-    console.log(reload);
-  }, [reload]);
+    // }
+  }, []);
 
+useEffect(()=>{
+    if(reload){
+      location.reload();
+    }
+    setReload(false);
+  },[reload]); 
   
   useEffect(()=>{
     ratingLoader();
