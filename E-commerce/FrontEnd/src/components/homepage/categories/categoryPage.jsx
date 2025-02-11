@@ -9,7 +9,7 @@ import favFullImg from "/images/favorite_full.png";
 import Footer from '../footer/footer';
 import { PhoneFooter } from '../homepage';
 import { useDispatch } from 'react-redux';
-import { incrementLike,decrementLike, CountingLike,remLikeList } from '../../../services/actions/actions.jsx';
+import { incrementLike,decrementLike, CountingLike,remLikeList,showPayment } from '../../../services/actions/actions.jsx';
 import {handleLikeList} from "../navbar/navbar";
 import Loader from '../loader/loader';
 import CryptoJS from 'crypto-js';
@@ -96,6 +96,7 @@ export default function CategoryPage({data,SlidesData,callData,imgFileName}){
   useEffect(()=>{
     callData();  
     call();
+    dispatch(showPayment(false));
   },[])
 
   function productName(str){
