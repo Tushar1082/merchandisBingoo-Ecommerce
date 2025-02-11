@@ -159,8 +159,9 @@ export default function Navbar() {
   }
   
   useEffect(()=>{
-    localStorage.saveItem("MDB_USER_NAME", "Tushar Sharma");
-    localStorage.saveItem("MDB_USER_EMAIL_ID", "tusharsharma1082@gmail.com");
+    localStorage.setItem("MDB_USER_NAME", "Tushar Sharma");
+    localStorage.setItem("MDB_USER_EMAIL_ID", "tusharsharma1082@gmail.com");
+    
     async function fetchData(){ 
       const bool = await callData();
       if(bool){
