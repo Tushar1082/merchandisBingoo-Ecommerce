@@ -158,10 +158,13 @@ export default function Navbar() {
   }
   
   useEffect(()=>{
-    const bool = await callData();
-    if(bool){
-      loginedUser();
+    async function fetchData(){ 
+      const bool = await callData();
+      if(bool){
+        loginedUser();
+      }
     }
+    fetchData();
   },[])
   
   function logout(){
