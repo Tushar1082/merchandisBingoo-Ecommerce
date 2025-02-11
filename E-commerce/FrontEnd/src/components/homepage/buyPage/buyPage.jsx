@@ -804,6 +804,7 @@ export default function BuyPage() {
         top:0
       })  
     }
+    console.log(reload);
   }, [reload]);
 
   
