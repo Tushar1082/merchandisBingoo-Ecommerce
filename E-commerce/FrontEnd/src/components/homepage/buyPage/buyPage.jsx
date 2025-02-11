@@ -793,6 +793,7 @@ export default function BuyPage() {
     }
  }
   useEffect(() => {
+    location.reload();
     setLoading(true);
     ratingLoader();
     callData();
@@ -800,6 +801,7 @@ export default function BuyPage() {
     window.scrollTo({
       top:0
     })
+    
   }, []);
   useEffect(()=>{
     ratingLoader();
