@@ -82,8 +82,6 @@ function OtherEvent() {
               className="fade-image"
             />
           </div>
-        </div>
-        <div id="secondEventMain">
           <div className="events_S" onClick={() => otherEventTemplate("saree")}>
             <img src="images/events/4.jpg" alt="error" />
             <img
