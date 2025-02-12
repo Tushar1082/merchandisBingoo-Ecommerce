@@ -46,7 +46,6 @@
 #cateFirst{
     display: flex;
     column-gap: 10px;
-    width: 60%;
     height: 10rem;
 }
 #cateFirst div{
@@ -65,7 +64,6 @@
 #cateSecond{
     display: flex;
     column-gap: 10px;
-    width: 60%;
     height: 10rem;
 }
 #cateSecond div{
@@ -98,7 +96,6 @@
     }
     #cateFirst{
         column-gap: unset;
-        width: unset;
         height: unset;
     }
     #cateCon p{
@@ -114,11 +111,9 @@
     }
     #cateSecond{
         column-gap: unset;
-        width: unset;
         height: unset;
     }
     #cateSecond div{
-        width: 6rem;
         height: 6rem;
         overflow: unset;
         flex-direction: column;
@@ -142,12 +137,6 @@
 @media(min-width:700px) and (max-width:1000px){
     #cateCon{
         margin: 10px;
-    }
-    #cateFirst{
-        width: unset;
-    }
-    #cateSecond{
-        width: unset;
     }
 }
 @media (min-width:375px) and (max-width:380px){
