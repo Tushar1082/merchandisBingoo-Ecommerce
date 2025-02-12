@@ -171,153 +171,80 @@
   #otherEventDiv4 p{
     font-weight: bold;
   }
-  /* OtherEvent */
-  #mainOtherEvent{
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  #otherEventCon{
-    display: inline-flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  #div1OtherEvent{
-    display: flex;
-    gap: 20px;
-  }
-  #div2OtherEvent{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-  #div1-Otherdiv{
-    background: url("../../../../public/images/events/7.jpg");
-    overflow: hidden;
-    position: relative;
-  }
-  #div1-Otherdiv img{
-    height: 30%;
-    position: absolute;
-    top: 26%;
-    right: 0;
-    animation: leftToRight 4s;
-    display: none; 
-  }
-  @keyframes leftToRight{
-    0%{
-      transform: translateX(-250%);
-    }
-    100%{
-      transform: translateX(0%);
-    }
-  }
-  #div2-Otherdiv{
-    background: url("../../../../public/images/events/cloth.jpg");
-    overflow: hidden;
-    position: relative;
-  }
-  #div2-Otherdiv img{
-    position: absolute;
-    height: 100%;
-    transform: translateX(40%);
-    animation: x 3s;
-  }
-  @keyframes x{
-    0%{
-      transform: translateX(200%);
-    }
-    100%{
-      transform: translateX(40%);
-    }
-  }
-  @keyframes leftT {
-    0%{
-      transform: translateX(100%);
-    }
-    100%{
-      transform: translateX(0%);
-    }
-  }
-  #div3-Otherdiv{
-    background: url("../../../../public/images/events/4.jpg");
-    overflow: hidden;
-    position: relative;
-  }
-  #div3-Otherdiv img{
-    height: 100%;
-    position: absolute;
-    left: 0;
-    animation: leftToRight 2s;
-    display: none;
-  }
-  #div4-Otherdiv{
-    background: url("../../../../public/images/events/5.jpg");
-    overflow: hidden;
-    position: relative;
-  }
-  #div4-Otherdiv img{
-    position: absolute;
-    height: 60%;
-    top: 20%;
-    left: 0;
-    animation: bottomToTop 2s;
-    display: none;
-  }
-  @keyframes bottomToTop {
-    0%{
-      transform: translateY(200%);
-    }
-    100%{
-      transform:translateY(0%)
-    }
-  }
-  #div5-Otherdiv{
-    background: url("../../../../public/images/events/6.jpg");
-    overflow: hidden;
-    position: relative;
-  }
-  #div5-Otherdiv img{
-    position: absolute;
-    height: 32%;
-    right: 29%;
-    top: 37%;
-    animation: rightToLeft 2s;
-  }
-  @keyframes rightToLeft {
-    0%{
-      transform: translateX(200%);
-    }
-    100%{
-      transform: translateX(0%);
-    }
-  }
-  #div1-Otherdiv,#div2-Otherdiv{
-    height: 20rem;
-    width: 40rem;
-    background-repeat:no-repeat ;
-    background-size: cover;
-    background-position: center; 
-    border-radius: 5px;
-    filter: drop-shadow(2px 1px 3px black);
-  }
-  #div3-Otherdiv,#div4-Otherdiv,#div5-Otherdiv{
-    height: 15rem;
-    width: 25rem;
-    background-repeat:no-repeat ;
-    background-size: cover;
-    background-position: center;
-    filter: drop-shadow(2px 2px 3px black);
-  }
+
   #mainOEP{
     display: none;
   }
+  
+  #firstEventMain{
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #firstEvent{
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
+  #firstEvent img:nth-child(1){
+    width: 100%;
+    border-radius: 20px;
+  }
+  #firstEvent img:nth-child(2){
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    right: 10%;
+  }
 
+  #secondEvent{
+    position: relative;
+    height: 100%;
+    width: 40%;
+  }
+  #secondEvent img:nth-child(1){
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  #secondEvent img:nth-child(2){
+    position: absolute;
+    width: 40%;
+    top: 0%;
+    right: 5%;
+  }
+  #secondEventMain{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+  }
+  .events_S{
+    position: relative;
+    width: 30%;
+  }
+  .events_S img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .events_S img:nth-child(2){
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  .fade-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
   @media (max-width:450px){
-    #mainOtherEvent{
-      display: none;
-    }
     #mainOEP{
       display: flex;
       flex-direction: column;
@@ -481,10 +408,6 @@
       width: 100%;
       flex-direction: unset;
     }
-    #div1OtherEvent{
-      flex-direction: column;
-      align-items: center;
-    }
     #div1-Otherdiv, #div2-Otherdiv{
       width: 40rem;
     }
@@ -499,9 +422,6 @@
     }
   }
   @media (max-width:1200px) and (min-width:1000px){
-    #div1-Otherdiv, #div2-Otherdiv {
-      width: 30rem;
-    }
     #div3-Otherdiv, #div4-Otherdiv, #div5-Otherdiv {
       width: 20rem;
     } 
