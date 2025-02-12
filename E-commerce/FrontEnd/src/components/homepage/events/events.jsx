@@ -63,7 +63,7 @@ function OtherEvent() {
   return (
       <div id="mainOtherEvent">
       <div ref={mainRef}>
-        <div style={{ display: "flex", alignItems: "center",gap: "1rem", flexDirection:'column', margin:'10px'}}>
+        <div id="firstEventMain" style={{ display: "flex", alignItems: "center",gap: "1rem", flexDirection:'column', margin:'10px'}}>
           <div id="firstEvent" onClick={() => otherEventTemplate("lehenga")}>
             <img src="images/events/7.jpg" alt="error" />
             <img
@@ -83,7 +83,7 @@ function OtherEvent() {
             />
           </div>
         </div>
-        <div id="firstEventMain">
+        <div id="secondEventMain">
           <div className="events_S" onClick={() => otherEventTemplate("saree")}>
             <img src="images/events/4.jpg" alt="error" />
             <img
