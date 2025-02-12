@@ -1,1 +1,429 @@
 
+/* @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); */
+#mainEvent{
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+  justify-content: center;
+}
+.sliderEvent{
+  position: relative;
+  height: 25rem;
+  width: 50%;
+  }
+  
+  .sliderImgEvent{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .sliderEvent.transitioning .sliderImgEvent {
+    opacity: 0;
+  }
+  .dotBtnEvent{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 10px;
+  }
+  .dotBtnEvent button{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: 1px solid grey;
+  }
+  .dotBtnEvent button:hover{
+    transition: 0.5s;
+    scale: 1.1;
+  }
+  /*other events*/
+  .otherEvent{
+    display: flex;
+    gap: 10px;
+  }
+  .otherEvent a{
+    color: black;
+    text-decoration: none;
+  }
+  #otherEvent1
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  #otherEvent1 h4,  #otherEvent2 h4, #otherEvent3 h4, #otherEvent4 h4{
+    font-family: 'Berkshire Swash', serif;
+    font-weight: 100;
+  }
+  #otherEvent1 p,  #otherEvent2 p, #otherEvent3 p, #otherEvent4 p{
+    font-family: 'Berkshire Swash', serif;
+  }
+  #otherEvent1 div:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
+  }
+  #otherEvent2
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  #otherEvent2 div:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
+  }
+  #otherEventDiv1{
+    background: url("../../../../public/images/events/macbook.png"),radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+  }
+  #otherEventDiv2{
+    background: url("../../../../public/images/events/television.png"),linear-gradient(109.6deg, rgb(255, 78, 80) 11.2%, rgb(249, 212, 35) 100.2%);;
+  }
+  #otherEventDiv3{
+    background: url("../../../../public/images/events/alexa.jpg");
+  }
+  #otherEventDiv4{
+    background: url("../../../../public/images/events/earbuds.png"), linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  }
+  #otherEventDiv1,#otherEventDiv3,#otherEventDiv4{
+    height: 12rem;
+    width: 17rem;
+    /* border: 2px solid; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  #otherEventDiv2{
+    height: 12rem;
+    width: 17rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  #otherEventDiv1 div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    /* border: 2px solid; */
+    color: white;
+    margin: 30px 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #otherEventDiv1 p{
+    font-size: 15px;
+  }
+  #otherEventDiv2 div{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+  }
+  #otherEventDiv2 p{
+    font-weight: bold;
+  }
+  #otherEventDiv3 div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid; */
+    color: black;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #otherEventDiv3 p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #otherEventDiv4 div{
+    width: 50%;
+    color: white;
+    margin: 10px;
+    margin-top: 31px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #otherEventDiv4 p{
+    font-weight: bold;
+  }
+
+  #mainOEP{
+    display: none;
+  }
+  
+  #firstEventMain{
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #firstEvent{
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
+  #firstEvent img:nth-child(1){
+    width: 100%;
+    border-radius: 20px;
+  }
+  #firstEvent img:nth-child(2){
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    right: 10%;
+  }
+
+  #secondEvent{
+    position: relative;
+    height: 100%;
+    width: 40%;
+  }
+  #secondEvent img:nth-child(1){
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  #secondEvent img:nth-child(2){
+    position: absolute;
+    width: 40%;
+    top: 0%;
+    right: 5%;
+  }
+  #secondEventMain{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+  }
+  .events_S{
+    position: relative;
+    width: 30%;
+  }
+  .events_S img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .events_S img:nth-child(2){
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  .fade-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+  @media (max-width:450px){
+    #mainOEP{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #mainEvent{
+      flex-direction: column;
+    }
+    .sliderEvent{
+      width: auto;
+      height: auto;
+    }
+    .otherEvent{
+      flex-direction: unset;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    #otherEventDiv1,#otherEventDiv2, #otherEventDiv3, #otherEventDiv4{
+      height: unset;
+      width: 100%;
+    }
+    #otherEvent1{
+      flex-direction: unset;
+      width: 100%;
+      gap: 10px;
+    }
+    #otherEvent2{
+      flex-direction: unset;
+      gap: 10px;
+      width: 100%;
+    }
+    #otherEvent1 h4, #otherEvent2 h4, #otherEvent3 h4, #otherEvent4 h4{
+      font-size: 10px;
+    }
+    #lehengaOEP{
+      width: 20rem;
+      position: relative;
+    }
+    #lehengaOEP img:first-child{
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #lehengaOEP img:last-child{
+      position: absolute;
+      width: 5rem;
+      top: 2.5rem;
+      left: 50%;
+      animation: leftRight 2s ease;
+    }
+    @keyframes leftRight{
+      0%{
+        transform: translateX(-16rem);
+      }
+      100%{
+        transform: translateX(0rem);
+      }
+    }
+
+    #tShirtOEP{
+      width: 20rem;
+      position: relative;
+    }
+    #tShirtOEP img:first-child{
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #tShirtOEP img:last-child{
+      position: absolute;
+      width: 15rem;
+      top: 2rem;
+      left: 25%;
+      animation: leftRight 2s ease;
+    }
+
+    #sareeOEP{
+      width: 20rem;
+      position: relative;
+    }
+    #sareeOEP img:first-child{
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #sareeOEP img:last-child{
+      position: absolute;
+      width: 10rem;
+      top: 2rem;
+      left: 5%;
+      animation: rightLeft 2s ease;
+    }
+    #blazerOEP{
+      width: 20rem;
+      position: relative;
+    }
+    #blazerOEP img:first-child{
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #blazerOEP img:last-child{
+      position: absolute;
+      width: 10rem;
+      top: 2rem;
+      left: 5%;
+      animation: rightLeft 2s ease;
+    }
+    #bookOEP{
+      width: 20rem;
+      position: relative;
+    }
+    #bookOEP img:first-child{
+      width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #bookOEP img:last-child{
+      position: absolute;
+      width: 9rem;
+      top: 5rem;
+      left: 31%;
+      animation: rightLeft 2s ease;
+    }
+    @keyframes rightLeft {
+      0%{
+        transform: translateX(16rem);
+      }
+      100%{
+        transform: translateX(0rem);
+      }
+    }
+  }
+  @media(max-width:1000px) and (min-width:500px){
+    #mainEvent{
+      margin: 5rem 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .sliderEvent{
+      width: auto;
+    }
+    .otherEvent{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: unset;
+    }
+    #otherEvent1{
+      flex-direction: unset;
+      width: 100%;
+    }
+    #otherEventDiv1, #otherEventDiv3, #otherEventDiv4{
+      width: unset;
+      flex-grow: 1;
+    }
+    #otherEventDiv2{
+      height: unset;
+      flex-grow: 1;
+    }
+    #otherEvent2{
+      width: 100%;
+      flex-direction: unset;
+    }
+    #firstEvent{
+      width: 70%
+    }  
+    #secondEvent{
+      width: 70%
+    } 
+    #events_S{
+      width: 30%
+    }
+  }
+  @media (max-width:1200px) and (min-width:1000px){
+    #searchNav{
+      flex-grow: 0.5;
+    }
+    #searchNav input{
+      flex-grow: 1;
+    }
+  }
