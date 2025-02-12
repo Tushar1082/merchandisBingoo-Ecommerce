@@ -61,9 +61,9 @@ function OtherEvent() {
   }
 
   return (
-    <div id="mainOtherEvent">
+      <div id="mainOtherEvent">
       <div ref={mainRef}>
-        <div id="firstEventMain">
+        <div style={{ display: "flex", justify-content: "center",gap: "1rem"}}>
           <div id="firstEvent" onClick={() => otherEventTemplate("lehenga")}>
             <img src="images/events/7.jpg" alt="error" />
             <img
@@ -82,6 +82,8 @@ function OtherEvent() {
               className="fade-image"
             />
           </div>
+        </div>
+        <div id="firstEventMain">
           <div className="events_S" onClick={() => otherEventTemplate("saree")}>
             <img src="images/events/4.jpg" alt="error" />
             <img
