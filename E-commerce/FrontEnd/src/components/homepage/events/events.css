@@ -185,7 +185,7 @@
   }
   #firstEvent{
     position: relative;
-    width: 70%;
+    width: 40%;
     height: 100%;
   }
   #firstEvent img:nth-child(1){
@@ -202,7 +202,7 @@
   #secondEvent{
     position: relative;
     height: 100%;
-    width: 70%;
+    width: 40%;
   }
   #secondEvent img:nth-child(1){
     width: 100%;
@@ -224,7 +224,7 @@
   }
   .events_S{
     position: relative;
-    width: 45%;
+    width: 30%;
   }
   .events_S img:nth-child(1){
     width: 100%;
