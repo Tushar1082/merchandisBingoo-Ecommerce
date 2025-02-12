@@ -1,4 +1,3 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); */
 #mainEvent{
   display: flex;
@@ -245,141 +244,7 @@
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   }
   
-  @media (max-width:450px){
-    #mainOEP{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #mainEvent{
-      flex-direction: column;
-    }
-    .sliderEvent{
-      width: auto;
-      height: auto;
-    }
-    .otherEvent{
-      flex-direction: unset;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    #otherEventDiv1,#otherEventDiv2, #otherEventDiv3, #otherEventDiv4{
-      height: unset;
-      width: 100%;
-    }
-    #otherEvent1{
-      flex-direction: unset;
-      width: 100%;
-      gap: 10px;
-    }
-    #otherEvent2{
-      flex-direction: unset;
-      gap: 10px;
-      width: 100%;
-    }
-    #otherEvent1 h4, #otherEvent2 h4, #otherEvent3 h4, #otherEvent4 h4{
-      font-size: 10px;
-    }
-    #lehengaOEP{
-      width: 20rem;
-      position: relative;
-    }
-    #lehengaOEP img:first-child{
-      width: 100%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #lehengaOEP img:last-child{
-      position: absolute;
-      width: 5rem;
-      top: 2.5rem;
-      left: 50%;
-      animation: leftRight 2s ease;
-    }
-    @keyframes leftRight{
-      0%{
-        transform: translateX(-16rem);
-      }
-      100%{
-        transform: translateX(0rem);
-      }
-    }
-
-    #tShirtOEP{
-      width: 20rem;
-      position: relative;
-    }
-    #tShirtOEP img:first-child{
-      width: 100%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #tShirtOEP img:last-child{
-      position: absolute;
-      width: 15rem;
-      top: 2rem;
-      left: 25%;
-      animation: leftRight 2s ease;
-    }
-
-    #sareeOEP{
-      width: 20rem;
-      position: relative;
-    }
-    #sareeOEP img:first-child{
-      width: 100%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #sareeOEP img:last-child{
-      position: absolute;
-      width: 10rem;
-      top: 2rem;
-      left: 5%;
-      animation: rightLeft 2s ease;
-    }
-    #blazerOEP{
-      width: 20rem;
-      position: relative;
-    }
-    #blazerOEP img:first-child{
-      width: 100%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #blazerOEP img:last-child{
-      position: absolute;
-      width: 10rem;
-      top: 2rem;
-      left: 5%;
-      animation: rightLeft 2s ease;
-    }
-    #bookOEP{
-      width: 20rem;
-      position: relative;
-    }
-    #bookOEP img:first-child{
-      width: 100%;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #bookOEP img:last-child{
-      position: absolute;
-      width: 9rem;
-      top: 5rem;
-      left: 31%;
-      animation: rightLeft 2s ease;
-    }
-    @keyframes rightLeft {
-      0%{
-        transform: translateX(16rem);
-      }
-      100%{
-        transform: translateX(0rem);
-      }
-    }
-  }
-  @media(max-width:1000px) and (min-width:500px){
+  @media (max-width:1000px){
     #mainEvent{
       margin: 5rem 3rem;
       display: flex;
@@ -419,7 +284,7 @@
       width: 30%
     }
   }
-  @media (max-width:1200px) and (min-width:1000px){
+  @media (max-width:1200px) and (min-width:1001px){
     #searchNav{
       flex-grow: 0.5;
     }
