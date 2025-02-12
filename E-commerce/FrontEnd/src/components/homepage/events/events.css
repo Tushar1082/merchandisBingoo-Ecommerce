@@ -252,7 +252,7 @@
   }
   @media (max-width: 700px){
     #mainEvent{
-      margin: 20px;
+      margin: 20px !important;
     }
   }
   @media (max-width:1000px){
