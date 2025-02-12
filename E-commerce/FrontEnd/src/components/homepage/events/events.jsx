@@ -63,7 +63,7 @@ function OtherEvent() {
   return (
       <div id="mainOtherEvent">
       <div ref={mainRef}>
-        <div style={{ display: "flex", justify-content: "center",gap: "1rem"}}>
+        <div style={{ display: "flex", justifyContent: "center",gap: "1rem"}}>
           <div id="firstEvent" onClick={() => otherEventTemplate("lehenga")}>
             <img src="images/events/7.jpg" alt="error" />
             <img
