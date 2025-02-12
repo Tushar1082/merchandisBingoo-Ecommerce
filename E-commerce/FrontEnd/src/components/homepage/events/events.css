@@ -408,23 +408,17 @@
       width: 100%;
       flex-direction: unset;
     }
-    #div1-Otherdiv, #div2-Otherdiv{
-      width: 40rem;
-    }
-    #div2OtherEvent{
-      flex-wrap: wrap;
-      gap: 3rem;
-      margin: 3rem 0rem;
-      justify-content: center;
-    }
-    #div3-Otherdiv, #div4-Otherdiv, #div5-Otherdiv{
-      width: 20rem;
+    #firstEvent{
+      width: 70%
+    }  
+    #secondEvent{
+      width: 70%
+    } 
+    #events_S{
+      width: 30%
     }
   }
   @media (max-width:1200px) and (min-width:1000px){
-    #div3-Otherdiv, #div4-Otherdiv, #div5-Otherdiv {
-      width: 20rem;
-    } 
     #searchNav{
       flex-grow: 0.5;
     }
