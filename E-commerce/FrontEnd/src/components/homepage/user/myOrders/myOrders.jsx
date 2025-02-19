@@ -183,7 +183,7 @@ export default function MyOrders() {
         navigate("/unauthorize");
       }else{
         const {orderList} = finalRes;
-        setData(orderList);
+        setData(orderList.reverse());
       }
     } catch (error) {
       console.log(error);
