@@ -165,7 +165,7 @@ export default function Navbar() {
 
     async function fetchData(){ 
       const bool = await callData();
-      alert(bool);
+
       if(bool){
         loginedUser();
       }
