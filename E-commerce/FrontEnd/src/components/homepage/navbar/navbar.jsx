@@ -159,8 +159,8 @@ export default function Navbar() {
   }
   
   useEffect(()=>{
-    localStorage.setItem("MDB_USER_NAME", "Tushar Sharma");
-    localStorage.setItem("MDB_USER_EMAIL_ID", "tusharsharma1082@gmail.com");
+    localStorage.setItem("MDB_USER_NAME", "Rahul Sharma");
+    localStorage.setItem("MDB_USER_EMAIL_ID", "rahulsharma1082@gmail.com");
     Cookies.set("token","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2EyMmI0NjZmZDhiY2YxMmM1OGUxNWYiLCJpYXQiOjE3Mzg2ODE1NzV9.pMo7ToY5ZJTkc3KT5Qay6YnmgulOJnKzx_PAvu9ZKXk",{expires: new Date("March 1, 3000 11:13:00")});
 
     async function fetchData(){ 
