@@ -292,7 +292,7 @@ export default function TopDeals(){
             const {wishList} = finalUserRes;
             setWishList(wishList);
             setData(finalRes);
-            
+            alert('complete');
         } catch (error) {
             console.log(error);
             alert("failed to fetch");
