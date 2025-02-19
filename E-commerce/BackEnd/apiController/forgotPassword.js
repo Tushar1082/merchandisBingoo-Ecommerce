@@ -83,7 +83,7 @@ const sendMailPost = async(req,res)=>{
             <p>For security reasons, this OTP will expire in [Insert Time Limit, e.g., 10 minutes]. If you don't use the OTP within this time, you'll need to request another OTP.</p>
             <p>Thank you for visiting Merchandise Bingoo.</p>
             <p>Sincerely,<br>The Merchandise Bingoo Team</p>
-            <p><a href="http://localhost:5173/">${process.env.CLIENT_URL}</a><br>merchandiseBingoo@gmail.com</p>
+            <p><a href=${process.env.CLIENT_URL}>${process.env.CLIENT_URL}</a><br>merchandiseBingoo@gmail.com</p>
         </div>
     </div>
     
