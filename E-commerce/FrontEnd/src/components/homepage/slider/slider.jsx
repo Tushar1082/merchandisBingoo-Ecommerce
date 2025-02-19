@@ -56,7 +56,7 @@ export default function SliderPhone() {
             alt="slider"
             className="slides"
             onClick={() => (window.location.href = elem.link)}
-            loading={index === 0 ? "eager" : "lazy"} // First image loads eagerly
+           
             style={{
               cursor: "pointer",
               transform: `translateX(-${currentIndex * 100}%)`,
