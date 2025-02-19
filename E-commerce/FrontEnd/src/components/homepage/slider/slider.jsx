@@ -84,6 +84,7 @@ export default function SliderPhone() {
                 className='slides'
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
+                loading="lazy"
                 />
             </>
           ))
