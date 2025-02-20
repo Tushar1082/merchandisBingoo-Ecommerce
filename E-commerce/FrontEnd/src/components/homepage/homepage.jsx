@@ -28,8 +28,6 @@ export default function Homepage() {
     <Categories/>
     <SpecialProduct/>
     <TopDeals/>
-    <Footer/>
-    <PhoneFooter/>
     </>
   )
 }
