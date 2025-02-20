@@ -34,8 +34,8 @@ export default function Homepage() {
       {/* <Events/>
     <EventsPhone/>*/}
     <TopDeals/>
-    <Footer/>
-    <PhoneFooter/>
+      {/*<Footer/>
+    <PhoneFooter/>*/}
     </>
   )
 }
