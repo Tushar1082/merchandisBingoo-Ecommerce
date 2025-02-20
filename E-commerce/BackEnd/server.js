@@ -34,7 +34,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));//This line is to parse the request body
 app.use(cookieParser());
 
-app.use(cors({credentials:true,origin:'https://merchandisbingoo.onrender.com'}));
+app.use(cors({credentials:true,origin:['https://merchandisbingoo.onrender.com', 'https://merchandis-bingoo-alpha.vercel.app']}));
 app.use("/category",routerCatgories);
 app.use("/category/women",routerWomen);
 app.use("/category/men",routerMen);
