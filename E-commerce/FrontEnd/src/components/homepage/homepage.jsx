@@ -4,7 +4,7 @@ import Navbar from './navbar/navbar';
 import Slider,{SliderPhone} from './slider/slider';
 import Categories from './categories/categories';
 import SpecialProduct from './specialProducts/specialProduct';
-import Events from './events/events';
+import Events,{EventsPhone} from './events/events';
 import TopDeals from './topDeals/topDeals';
 import Footer from './footer/footer';
 import accountImg from "/images/navbar/account.png";
@@ -32,6 +32,7 @@ export default function Homepage() {
     <Categories/>
     <SpecialProduct/>
     <Events/>
+    <EventsPhone/>
     <TopDeals/>
     <Footer/>
     <PhoneFooter/>
