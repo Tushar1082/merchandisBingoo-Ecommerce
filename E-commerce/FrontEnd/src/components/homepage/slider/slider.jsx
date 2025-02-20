@@ -46,43 +46,43 @@ export default function SliderPhone() {
   return (
     <div style={{backgroundColor:'#d3d3d34a'}}>
       <div id='mainSlider'>
-          <img src="images/slider/asus.webp"
+          <img src="../../../../public/images/slider/images/slider/asus.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`}
             style={{cursor:"pointer"}}
             />
-                      <img src="images/slider/womenSale.webp"
+                      <img src="../../../../public/images/slider/images/slider/womenSale.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`/category/women`}
             style={{cursor:"pointer"}}
             />
-                      <img src="images/slider/menSale.webp"
+                      <img src="../../../../public/images/slider/images/slider/menSale.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`/category/men`}
             style={{cursor:"pointer"}}
             />
-                      <img src="images/slider/mobileSale.webp"
+                      <img src="../../../../public/images/slider/images/slider/mobileSale.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`buyPage?category=realme&&${encryptSale40.toString()}&&id=6`}
             style={{cursor:"pointer"}}
             />
-                      <img src="images/slider/electronicSale.webp"
+                      <img src="../../../../public/images/slider/images/slider/electronicSale.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href='/category/electronics'}
             style={{cursor:"pointer"}}
             />
-                      <img src="images/slider/ps5.webp"
+                      <img src="../../../../public/images/slider/images/slider/ps5.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`}
             style={{cursor:"pointer"}}
             />
-            <img src="images/slider/laptopSale.webp"
+            <img src="../../../../public/images/slider/images/slider/laptopSale.webp"
             alt="error" 
             className='slides'
             onClick={()=>window.location.href=`/category/electronics/laptops`}
