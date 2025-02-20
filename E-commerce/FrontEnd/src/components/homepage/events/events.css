@@ -250,59 +250,57 @@
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   }
-  @media (max-width: 700px){
-    #mainEvent{
-      margin: 20px !important;
-    }
+
+  #mainEventPhone{
+    display: none;
   }
-  @media (max-width:1000px){
-    #mainEvent{
-      margin: 5rem 3rem;
+
+  @media (max-width:600px) {
+    #mainEventPhone{
       display: flex;
       flex-direction: column;
+      margin: 20px;
+      gap: 10px;
+      justify-content: center;
     }
-    .sliderEvent{
-      width: auto;
-    }
-    .otherEvent{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: unset;
-    }
-    #otherEvent1{
-      flex-direction: unset;
-      width: 100%;
+    #mainEvent{
+      display: none;
     }
     #otherEventDiv1, #otherEventDiv3, #otherEventDiv4{
-      width: unset;
-      flex-grow: 1;
+      height: 10rem;
+      width: 12rem;
     }
     #otherEventDiv2{
-      height: unset;
-      flex-grow: 1;
+      height: 10rem;
+      width: 12rem;
     }
-    #otherEvent2{
-      width: 100%;
-      flex-direction: unset;
+    #otherEvent1 h4, #otherEvent2 h4, #otherEvent3 h4, #otherEvent4 h4{
+      font-size: small;
     }
-    #firstEventMain{   
-  	  flex-direction: column;
-    }
-    #firstEvent{
-      width: 70%
-    }  
-    #secondEvent{
-      width: 70%
-    } 
-    .events_S{
-      width: 40%
+    .sliderEvent{
+      position: relative;
+      height: 20rem;
+      width: unset;
     }
   }
-  @media (max-width:1200px) and (min-width:1001px){
-    #searchNav{
-      flex-grow: 0.5;
+
+  @media (min-width:600px) and (max-width: 800px){
+    #mainEvent{
+      flex-direction: column;
+      align-items: center;
     }
-    #searchNav input{
-      flex-grow: 1;
+    .sliderEvent{
+      width: unset;
+    }
+  }
+
+  @media (min-width:801px) and (max-width: 1100px){
+    #otherEventDiv1, #otherEventDiv3, #otherEventDiv4{
+      height: 12rem;
+      width: 13rem;
+    }
+    #otherEventDiv2{
+      height: 12rem;
+      width: 13rem;
     }
   }
