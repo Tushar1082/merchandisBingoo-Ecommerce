@@ -8,31 +8,31 @@ export default function SliderPhone() {
 
   const imgArr = [
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2Fasus.jpg?alt=media&token=75265768-5dee-44e1-b2da-0e3c8724755f",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2Fasus.jpeg?alt=media&token=0cf121f5-eba3-43c2-8834-9c722a763334",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
-     img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FwomenSale.png?alt=media&token=25d31ca7-d3f3-4fec-a2e2-2138e6f03b6c",
+     img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FwomenSale.jpeg?alt=media&token=edca4567-e3f3-479d-a52a-32f143c194da",
      link:"/category/women"
     },
     {
-     img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FmenSale.png?alt=media&token=d8f84f2e-eaf3-46f7-a6b9-f678329f0f33",
+     img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FmenSale.png?alt=media&token=f49213a2-e83e-453a-b1ec-97176aa7cf5c",
      link:"/category/men"
     },
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FmobileSale.png?alt=media&token=2f7a46f4-7ba3-48df-9a38-6b413da07ebd",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FmobileSale.jpeg?alt=media&token=3585cb76-c7dc-4059-adbe-0dc9330f7c72",
       link:`/buyPage?category=realme&&${encryptSale40.toString()}&&id=6`
     },
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FelectronicSale.jpg?alt=media&token=c5a30ed9-471b-4b7b-9f4d-fab1ef72fea6",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FelectronicSale.jpg?alt=media&token=6e0e0901-4710-41d3-a654-79841ccb088b",
       link:"/category/electronics"
     },
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2Fps5.jpg?alt=media&token=0c965c87-342c-47e3-bff4-c80045b23d17",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2Fps5.jpg?alt=media&token=25636f9d-4b07-45fb-9018-2077bd62601e",
       link:`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`
     },
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FlaptopSale.png?alt=media&token=e1d7804f-55d5-48e1-a63e-622f21a899f3",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FsiteOwnData%2FlaptopSale.png?alt=media&token=1dccb522-890b-4fb9-87c6-ff87f6f7d253",
       link:"/category/electronics/laptops"
     }];
   
@@ -95,4 +95,4 @@ export default function SliderPhone() {
       </div>
     </div>
   )
-};
+}
