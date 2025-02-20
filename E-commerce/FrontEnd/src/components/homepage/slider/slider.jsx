@@ -88,6 +88,7 @@ export default function SliderPhone() {
               display: index === currentIndex ? "block" : "none",
             }}
             onLoad={() => handleImageLoad(index)}
+            loading={index!=0?'lazy':''}
           />
         ))}
 
