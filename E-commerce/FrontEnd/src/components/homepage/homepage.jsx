@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './navbar/navbar';
-import Slider from './slider/slider';
+import Slider,{SliderPhone} from './slider/slider';
 import Categories from './categories/categories';
 import SpecialProduct from './specialProducts/specialProduct';
 import Events from './events/events';
@@ -28,9 +28,10 @@ export default function Homepage() {
     <>
     <Navbar/>
     <Slider/>
+    <SliderPhone/>
     <Categories/>
     <SpecialProduct/>
-{/*     <Events/> */}
+    <Events/>
     <TopDeals/>
     <Footer/>
     <PhoneFooter/>
