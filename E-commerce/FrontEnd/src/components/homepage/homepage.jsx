@@ -31,8 +31,8 @@ export default function Homepage() {
 {/*     <SliderPhone/> */}
     <Categories/>
     <SpecialProduct/>
-    // <Events/>
-    // <EventsPhone/>
+{/*  <Events/> */}
+{/*     <EventsPhone/>  */}
     <TopDeals/>
     <Footer/>
     <PhoneFooter/>
