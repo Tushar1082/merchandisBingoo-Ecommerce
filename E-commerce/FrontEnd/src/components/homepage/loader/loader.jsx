@@ -10,7 +10,7 @@ export default function Loader(){
       event.stopPropagation();
     }
     document.body.addEventListener('click',disableInteractions, { capture: true });
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
 
     return () => {
       // Re-enable interactions when the Loader is unmounted
