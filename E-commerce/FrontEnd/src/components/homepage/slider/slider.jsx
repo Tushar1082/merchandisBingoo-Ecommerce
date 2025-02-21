@@ -7,7 +7,8 @@ export default function Slider() {
 
   const imgArr = [
     {
-      img:"images/slider/asus.webp",
+      // img:"images/slider/asus.webp",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fasus.webp?alt=media&token=47369da5-b52e-4ef6-806f-9e11e2f7ccb8",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
@@ -89,7 +90,8 @@ export function SliderPhone() {
   
   const imgArrMobileView = [
     {
-      img:"images/slider/silderImagesForMobileView/asus.webp",
+      // img:"images/slider/silderImagesForMobileView/asus.webp",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fasus%20-%20mobile.webp?alt=media&token=8ba84bc1-c363-4ec8-90f9-280658971e7f",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
