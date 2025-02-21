@@ -108,9 +108,7 @@ function SpecialItem({ data,cart,index,like,category,sale,setLoading }) {
       try {        
         setLoading(true);
         handleList(cartList,removeCartList);
-        setTimeout(()=>{
           setLoading(false);
-        },2000)
         cartList.pop();
       } catch (error) {
         alert("failed to add item in Cart");
@@ -125,9 +123,7 @@ function SpecialItem({ data,cart,index,like,category,sale,setLoading }) {
       handleWishList();
       setLoading(true)
       handleLikeList(likeList,removeLikeList);
-      setTimeout(()=>{
         setLoading(false);
-      },2000)
       likeList.pop();
     } catch (error) {
      alert("faild to add in wishlist"); 
