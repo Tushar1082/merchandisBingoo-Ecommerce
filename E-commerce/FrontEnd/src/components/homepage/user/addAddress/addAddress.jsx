@@ -178,27 +178,17 @@ export default function AddAddress() {
           }
         }
         if(finalRes.ok){
-          setTimeout(()=>{
             setLoading(false);
-            // alert(finalRes.ok);
-          },2000)
         }else if(finalRes.msg){
-          setTimeout(()=>{
             setLoading(false);
-            // alert(finalRes.msg);
-          },2000)
         }else if(finalRes.error){
-          setTimeout(()=>{
             setLoading(false);
-            // alert("failed to add address");
-          },2000)
+            alert("failed to add address");
         }
       } catch (error) {
-        setTimeout(()=>{
           setLoading(false);
           alert("Error:- failed to add address");
           console.log(error);
-        },2000)
       }
 
       setTimeout(()=>{
