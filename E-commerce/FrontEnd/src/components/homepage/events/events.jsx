@@ -1,28 +1,28 @@
 import React, { useEffect, useState,useRef } from 'react';
 import "./events.css";
 import { Link } from 'react-router-dom';
-// import lehengaImg from '/images/events/7.jpg';
-// import lehengaOff from '/images/events/lehengaOff.png';
-// import tShirtImg from '/images/events/cloth.jpg';
-// import tShirtOff from '/images/events/t-shirtOff.png';
-// import sareeImg from '/images/events/4.jpg';
-// import sareeOff from '/images/events/sareeOff.png';
-// import blazerImg from '/images/events/5.jpg';
-// import blazerOff from '/images/events/blazarOff.png';
-// import bookImg from '/images/events/6.jpg';
-// import bookOff from '/images/events/bookOff.png';
+// import lehengaImg from '/images/events/7.webp';
+// import lehengaOff from '/images/events/lehengaOff.webp';
+// import tShirtImg from '/images/events/cloth.webp';
+// import tShirtOff from '/images/events/t-shirtOff.webp';
+// import sareeImg from '/images/events/4.webp';
+// import sareeOff from '/images/events/sareeOff.webp';
+// import blazerImg from '/images/events/5.webp';
+// import blazerOff from '/images/events/blazarOff.webp';
+// import bookImg from '/images/events/6.webp';
+// import bookOff from '/images/events/bookOff.webp';
 
 // images for mobile view
-import lehengaImgMobileView from '/images/events/mobileView/7.jpg';
-import lehengaOffMobileView from '/images/events/mobileView/lehengaOff.jpeg';
-import tShirtImgMobileView from '/images/events/mobileView/cloth.jpg';
-import tShirtOffMobileView from '/images/events/mobileView/t-shirtOff.jpeg';
-import sareeImgMobileView from '/images/events/mobileView/4.jpg';
-import sareeOffMobileView from '/images/events/mobileView/sareeOff.jpeg';
-import blazerImgMobileView from '/images/events/mobileView/5.jpg';
-import blazerOffMobileView from '/images/events/mobileView/blazarOff.jpeg';
-import bookImgMobileView from '/images/events/mobileView/6.jpg';
-import bookOffMobileView from '/images/events/mobileView/bookOff.jpeg';
+import lehengaImgMobileView from '/images/events/mobileView/7.webp';
+import lehengaOffMobileView from '/images/events/mobileView/lehengaOff.webp';
+import tShirtImgMobileView from '/images/events/mobileView/cloth.webp';
+import tShirtOffMobileView from '/images/events/mobileView/t-shirtOff.webp';
+import sareeImgMobileView from '/images/events/mobileView/4.webp';
+import sareeOffMobileView from '/images/events/mobileView/sareeOff.webp';
+import blazerImgMobileView from '/images/events/mobileView/5.webp';
+import blazerOffMobileView from '/images/events/mobileView/blazarOff.webp';
+import bookImgMobileView from '/images/events/mobileView/6.webp';
+import bookOffMobileView from '/images/events/mobileView/bookOff.webp';
 import CryptoJS from 'crypto-js';
 
 function OtherEvent() {
@@ -77,18 +77,18 @@ function OtherEvent() {
       <div ref={mainRef}>
         <div id="firstEventMain">
           <div id="firstEvent" onClick={() => otherEventTemplate("lehenga")}>
-            <img src="images/events/7.jpg" alt="error" />
+            <img src="images/events/7.webp" alt="error" />
             <img
-              src="images/events/lehengaOff.png"
+              src="images/events/lehengaOff.webp"
               alt="error"
               ref={(el) => (divImgRefs.current[0] = el)}
               className="fade-image"
             />
           </div>
           <div id="secondEvent" onClick={() => otherEventTemplate("tShirt")}>
-            <img src="images/events/cloth.jpg" alt="error" />
+            <img src="images/events/cloth.webp" alt="error" />
             <img
-              src="images/events/t-shirtOff.png"
+              src="images/events/t-shirtOff.webp"
               alt="error"
               ref={(el) => (divImgRefs.current[1] = el)}
               className="fade-image"
@@ -97,18 +97,18 @@ function OtherEvent() {
         </div>
         <div id="secondEventMain">
           <div className="events_S" onClick={() => otherEventTemplate("saree")}>
-            <img src="images/events/4.jpg" alt="error" />
+            <img src="images/events/4.webp" alt="error" />
             <img
-              src="images/events/sareeOff.png"
+              src="images/events/sareeOff.webp"
               alt="error"
               ref={(el) => (divImgRefs.current[2] = el)}
               className="fade-image"
             />
           </div>
           <div className="events_S" onClick={() => otherEventTemplate("blazer")}>
-            <img src="images/events/5.jpg" alt="error" />
+            <img src="images/events/5.webp" alt="error" />
             <img
-              src="images/events/blazarOff.png"
+              src="images/events/blazarOff.webp"
               alt="error"
               ref={(el) => (divImgRefs.current[3] = el)}
               className="fade-image"
@@ -116,9 +116,9 @@ function OtherEvent() {
             />
           </div>
           <div className="events_S" onClick={() => otherEventTemplate("book")}>
-            <img src="images/events/6.jpg" alt="error" />
+            <img src="images/events/6.webp" alt="error" />
             <img
-              src="images/events/bookOff.png"
+              src="images/events/bookOff.webp"
               alt="error"
               ref={(el) => (divImgRefs.current[4] = el)}
               className="fade-image"
@@ -211,7 +211,7 @@ useEffect(()=>{
 
 
 export default function Events() {
-  const images=["/images/events/1.jpg","/images/events/2.png","/images/events/3.jpg","/images/events/game.jpg"];
+  const images=["/images/events/1.webp","/images/events/2.webp","/images/events/3.webp","/images/events/game.webp"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setTransitioning] = useState(false);
 
@@ -331,7 +331,7 @@ export default function Events() {
   );
 }
 export function EventsPhone() {
-  const imagesMobileView=["/images/events/mobileView/1.jpg","/images/events/mobileView/2.jpeg","/images/events/mobileView/3.jpg","/images/events/mobileView/game.jpg"];
+  const imagesMobileView=["/images/events/mobileView/1.webp","/images/events/mobileView/2.webp","/images/events/mobileView/3.webp","/images/events/mobileView/game.webp"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setTransitioning] = useState(false);
 
