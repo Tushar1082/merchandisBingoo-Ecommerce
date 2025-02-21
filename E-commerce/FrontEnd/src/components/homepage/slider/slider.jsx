@@ -65,15 +65,14 @@ export default function Slider() {
     <div style={{backgroundColor:'#d3d3d34a'}}>
       <div id='mainSlider'>
           {imgArr.map((elem,index)=>(
-            <>
               <img src={elem.img}
                 alt="error" 
                 key={index} 
                 className='slides'
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
+                        loading={index === 0 ? "eager" : "lazy"} 
                 />
-            </>
           ))
           }
           <div id='sliderBtn'>
@@ -147,15 +146,14 @@ export function SliderPhone() {
     <div style={{backgroundColor:'#d3d3d34a'}}>
       <div id='mainSliderMobile'>
           {imgArrMobileView.map((elem,index)=>(
-            <>
               <img src={elem.img}
                 alt="error" 
                 key={index} 
                 className='slidesMobileView'
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
+                        loading={index === 0 ? "eager" : "lazy"} 
                 />
-            </>
           ))
           }
           <div id='sliderBtn'>
