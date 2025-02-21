@@ -75,7 +75,8 @@ export default function Slider() {
                 className='slides'
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
-                        loading={index === 0 ? "eager" : "lazy"} 
+                loading="lazy"
+{/*                         loading={index === 0 ? "eager" : "lazy"}  */}
                 fetchpriority={index === 0?"high":"low"}
                 />
           ))
@@ -161,7 +162,8 @@ export function SliderPhone() {
                 className='slidesMobileView'
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
-                        loading={index === 0 ? "eager" : "lazy"} 
+                loading = "lazy"
+{/*                         loading={index === 0 ? "eager" : "lazy"}  */}
                                 fetchpriority={index === 0?"high":"low"}
                 />
           ))
