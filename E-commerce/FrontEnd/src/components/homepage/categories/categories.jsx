@@ -56,17 +56,17 @@ export default function Categories(){
                <div id="cateCon" >
                     <div id="cateFirst">
                          <div onClick={women}>
-                            <img src="images/categories/category/women.jpg" alt="error" />
+                            <img src="images/categories/category/women.jpg" alt="error" loading = "lazy"/>
                             <h3>Women</h3>
                             <p>view all</p>
                         </div>
                         <div onClick={men}>
-                            <img src="images/categories/category/men.png" alt="error" />
+                            <img src="images/categories/category/men.png" alt="error" loading = "lazy"/>
                             <h3>Men</h3>
                             <p>view all</p>
                         </div>
                         <div onClick={mobile}>
-                            <img src="images/categories/category/mobile.jpeg" alt="error" id="cateMobileImg"/>
+                            <img src="images/categories/category/mobile.jpeg" alt="error" id="cateMobileImg" loading = "lazy"/>
                             <h3>Mobiles</h3>
                             <p>view all</p>
                         </div>
@@ -74,17 +74,17 @@ export default function Categories(){
 
                     <div id="cateSecond">
                         <div  id="cateElec" onClick={electronics}>
-                            <img src="images/categories/category/electronics.png" alt="error"/>
+                            <img src="images/categories/category/electronics.png" alt="error" loading = "lazy"/>
                             <h3>Electronics</h3>
                             <p>view all</p>
                         </div>
                         <div onClick={bag}>
-                            <img src="images/categories/category/bag.png" alt="error" />
+                            <img src="images/categories/category/bag.png" alt="error" loading = "lazy"/>
                             <h3>Bags</h3>
                             <p>view all</p>
                         </div>
                         <div onClick={book}>
-                            <img src="images/categories/category/b.jpg" alt="error" />
+                            <img src="images/categories/category/b.jpg" alt="error" loading = "lazy"/>
                             <h3>Books</h3>
                             <p>view all</p>
                         </div>
