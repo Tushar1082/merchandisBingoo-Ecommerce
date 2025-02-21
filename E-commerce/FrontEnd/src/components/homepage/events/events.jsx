@@ -279,6 +279,7 @@ export default function Events() {
           alt={`Slide ${currentIndex + 1}`}
           className="sliderImgEvent"
           onClick={()=>eventTemplate(currentIndex)}
+          loading = "lazy"
         />
         <div className='dotBtnEvent'>
           {images.map((elem,index)=>(
@@ -399,6 +400,7 @@ export function EventsPhone() {
           alt={`Slide ${currentIndex + 1}`}
           className="sliderImgEvent"
           onClick={()=>eventTemplate(currentIndex)}
+          loading = "lazy"
         />
         <div className='dotBtnEvent'>
           {imagesMobileView.map((elem,index)=>(
