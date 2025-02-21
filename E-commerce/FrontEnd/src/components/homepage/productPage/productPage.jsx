@@ -56,7 +56,7 @@ export default function ProductPage({ data }) {
 
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     }
   };
   const handlePrevChange = (newPage) => {
@@ -66,7 +66,7 @@ export default function ProductPage({ data }) {
       window.scrollTo({ top: 0, behaviour: "smooth" });
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     }
   };
   useEffect(() => {
