@@ -193,9 +193,7 @@ function Product({obj,elem,index}){
       handleWishList();
       handleLikeList(likeList,removeLikeList);      
       likeList.pop();
-      setTimeout(()=>{
         setLoad(false);
-      },2000)
     } catch (error) {
       console.log(error);
      alert("faild to add in wishlist"); 
