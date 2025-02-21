@@ -293,7 +293,7 @@
       width: 70%;
     }
     .events_S{
-      width: 50%;
+      width: 45%;
     }
   }
 
@@ -311,9 +311,9 @@
     #firstEvent,#secondEvent{
       width: 70%;
     }
-    .events_S{
-      width: 50%;
-    }
+    .events_S {
+      width: 45%;
+  }
   }
 
   @media (min-width:801px) and (max-width: 1100px){
