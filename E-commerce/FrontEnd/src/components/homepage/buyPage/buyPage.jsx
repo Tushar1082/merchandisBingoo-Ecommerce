@@ -99,15 +99,11 @@ export default function BuyPage() {
     })
     
     p.then(()=>{
-      setTimeout(()=>{
         setLoading(false);
-      },1000);
     }).catch((error)=>{
       console.log(error);
       alert("failed to add item in Cart");
-      setTimeout(()=>{
         setLoading(false);
-      },1000);
     })
   };
   const handleCart=async(val)=>{
