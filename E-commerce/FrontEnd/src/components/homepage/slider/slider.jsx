@@ -8,19 +8,22 @@ export default function Slider() {
   const imgArr = [
     {
       // img:"images/slider/asus.webp",
-      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fasus.webp?alt=media&token=47369da5-b52e-4ef6-806f-9e11e2f7ccb8",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2Fasus.webp?alt=media&token=57a76325-8d00-4dbc-a9bc-2b81931b1fe5",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
-     img:"images/slider/womenSale.webp",
+     // img:"images/slider/womenSale.webp",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FwomenSale.webp?alt=media&token=8db2c1a9-016e-4e76-96ba-33ec744347f8",
      link:"/category/women"
     },
     {
-     img:"images/slider/menSale.webp",
+     // img:"images/slider/menSale.webp",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FmenSale.webp?alt=media&token=7d530fad-44af-453f-b595-687797dd0889",
      link:"/category/men"
     },
     {
-      img:"images/slider/ps5.webp",
+      // img:"images/slider/ps5.webp",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2Fps5.webp?alt=media&token=d56f02a6-d2a5-4f4f-a542-55446f65b70c",
       link:`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`
     }
   ];
@@ -91,19 +94,22 @@ export function SliderPhone() {
   const imgArrMobileView = [
     {
       // img:"images/slider/silderImagesForMobileView/asus.webp",
-      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fasus%20-%20mobile.webp?alt=media&token=8ba84bc1-c363-4ec8-90f9-280658971e7f",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FsilderImagesForMobileView%2Fasus.webp?alt=media&token=e5853d62-139c-491d-91da-e0097d97b389",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
-     img:"images/slider/silderImagesForMobileView/womenSale.webp",
+     // img:"images/slider/silderImagesForMobileView/womenSale.webp",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FsilderImagesForMobileView%2FwomenSale.webp?alt=media&token=2d1fc8f3-f64a-4a13-b885-97919f9a646a",
      link:"/category/women"
     },
     {
-     img:"images/slider/silderImagesForMobileView/menSale.webp",
+     // img:"images/slider/silderImagesForMobileView/menSale.webp",
+      img:"https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FsilderImagesForMobileView%2FmenSale.webp?alt=media&token=cb9d8cb0-fb5f-4b94-a84b-b3f77a7d7c06",
      link:"/category/men"
     },
     {
-      img:"images/slider/silderImagesForMobileView/ps5.webp",
+      // img:"images/slider/silderImagesForMobileView/ps5.webp",
+      img: "https://firebasestorage.googleapis.com/v0/b/ecommercewebapp-40db9.appspot.com/o/MerchandiseBingoo%2FappOwnData%2Fslider%2FsilderImagesForMobileView%2Fps5.webp?alt=media&token=4a30feb1-8072-492d-adab-5833e28d38ee",
       link:`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`
     }
   ];
