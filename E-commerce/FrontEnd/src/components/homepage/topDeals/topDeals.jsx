@@ -23,9 +23,7 @@ function Card({data,wishList,setLoading}){
     handleWishList();
     handleLikeList(likeList,removeLikeList);
     likeList.pop();
-    setTimeout(()=>{
         setLoading(false);
-    },2000)
   }
   const handleWishList = async() => {
     if(!fav){
