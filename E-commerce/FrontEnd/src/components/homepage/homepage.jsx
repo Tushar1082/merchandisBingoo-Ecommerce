@@ -27,15 +27,15 @@ export default function Homepage() {
   return (
     <>
     <Navbar/>
-      {/*<Slider/>
-    <SliderPhone/>*/}
+      <Slider/>
+    <SliderPhone/>
     <Categories/>
     <SpecialProduct/>
-      {/* <Events/>
-    <EventsPhone/>*/}
+      <Events/>
+    <EventsPhone/>
     <TopDeals/>
-      {/*<Footer/>
-    <PhoneFooter/>*/}
+      <Footer/>
+    <PhoneFooter/>
     </>
   )
 }
