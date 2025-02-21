@@ -145,13 +145,11 @@ export default function OrderSummary({orderL,dispOrder}) {
   }
   function finalToPay(){
     const total = cartPrice - cartDisPrice;
-    setTimeout(()=>{
       setLoading(false);
       dispatch(orderList(items));
       dispatch(totalAmount(total));
       dispatch(disOrderPage(false));
       dispatch(disPaymentPage(true));
-    },2000)
   }
 
   function findTotal(){
