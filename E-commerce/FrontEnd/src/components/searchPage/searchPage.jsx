@@ -57,9 +57,7 @@ export default function SearchPage() {
     setCurrentPage(newPage);
     window.scrollTo({top:0,behaviour:"smooth"});
     
-    setTimeout(()=>{
       setLoading(false);
-    },2000)
   }
 };
 const handlePrevChange = (newPage) => {
@@ -67,9 +65,7 @@ const handlePrevChange = (newPage) => {
     setLoading(true);
     setCurrentPage(newPage);
     window.scrollTo({top:0,behaviour:"smooth"});
-    setTimeout(()=>{
       setLoading(false);
-    },2000)
   }
 };
 
