@@ -73,13 +73,10 @@ export default function MyAccount() {
       const finalRes = await res.json();
 
       if(finalRes.success){
-        setTimeout(()=>{
           setLoading(false);
-          alert(finalRes.success);
           localStorage.setItem("MDB_USER_NAME",newChanges.name);
           localStorage.setItem("MDB_USER_EMAIL_ID",newChanges.email);
           window.location.reload();
-        },2000)
       }else if(finalRes.fail){
         alert(finalRes.fail)
       }else{
