@@ -7,19 +7,19 @@ export default function Slider() {
 
   const imgArr = [
     {
-      img:"images/slider/asus.jpg",
+      img:"images/slider/asus.webp",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
-     img:"images/slider/womenSale.png",
+     img:"images/slider/womenSale.webp",
      link:"/category/women"
     },
     {
-     img:"images/slider/menSale.png",
+     img:"images/slider/menSale.webp",
      link:"/category/men"
     },
     {
-      img:"images/slider/ps5.jpg",
+      img:"images/slider/ps5.webp",
       link:`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`
     }
   ];
@@ -88,19 +88,19 @@ export function SliderPhone() {
   
   const imgArrMobileView = [
     {
-      img:"images/slider/silderImagesForMobileView/asus.jpg",
+      img:"images/slider/silderImagesForMobileView/asus.webp",
       link:`/buyPage?category=laptops&&${encryptSale50.toString()}&&id=16`
     },
     {
-     img:"images/slider/silderImagesForMobileView/womenSale.jpeg",
+     img:"images/slider/silderImagesForMobileView/womenSale.webp",
      link:"/category/women"
     },
     {
-     img:"images/slider/silderImagesForMobileView/menSale.jpeg",
+     img:"images/slider/silderImagesForMobileView/menSale.webp",
      link:"/category/men"
     },
     {
-      img:"images/slider/silderImagesForMobileView/ps5.jpg",
+      img:"images/slider/silderImagesForMobileView/ps5.webp",
       link:`/buyPage?category=gamingConsoles&&${encryptSale50.toString()}&&id=11`
     }
   ];
