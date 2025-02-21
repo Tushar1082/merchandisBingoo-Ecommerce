@@ -73,11 +73,8 @@ export default function ForgotPass({name,email,profileImg}) {
         },
         body:JSON.stringify({pass,email})
       });
-      setTimeout(()=>{
         setLoading(false);
-        // navigate("/login");
         window.location.reload();
-      },2000)
     }
   }
   useEffect(()=>{
