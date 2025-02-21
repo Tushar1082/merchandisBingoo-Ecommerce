@@ -72,6 +72,7 @@ export default function Slider() {
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
                         loading={index === 0 ? "eager" : "lazy"} 
+                fetchpriority={index === 0?"high":"low"}
                 />
           ))
           }
@@ -153,6 +154,7 @@ export function SliderPhone() {
                 onClick={()=>window.location.href=elem.link}
                 style={{cursor:"pointer"}}
                         loading={index === 0 ? "eager" : "lazy"} 
+                                fetchpriority={index === 0?"high":"low"}
                 />
           ))
           }
