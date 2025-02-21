@@ -227,20 +227,16 @@ export default function CartPage() {
     }
   }
   function handlefinal(){
-    setTimeout(()=>{
-        setLoading(false);
-        dispatch(setCartPrice(0));
-        dispatch(setDisCartPrice(0));
-        dispatch(orderList(obj));
-        dispatch(showPayment(true));
-      },2000)
+      setLoading(false);
+      dispatch(setCartPrice(0));
+      dispatch(setDisCartPrice(0));
+      dispatch(orderList(obj));
+      dispatch(showPayment(true));
   }
   useEffect(()=>{
     setLoading(true);
     callData();
-    setTimeout(()=>{
-      setLoading(false);
-    },1000);
+    setLoading(false);
     window.scrollTo({top:true})
   },[])
   useEffect(()=>{
