@@ -6,7 +6,7 @@ import pin from "/images/footer/pinterest.png";
 import map from "/images/footer/map.png";
 import phone from "/images/footer/phone.png";
 import gmail from "/images/footer/gmail.png";
-import bg from "/images/footer/bgImg.png";
+import bg from "/images/footer/bgImg.webp";
 import "./footer.css";
 
 export default function Footer() {
