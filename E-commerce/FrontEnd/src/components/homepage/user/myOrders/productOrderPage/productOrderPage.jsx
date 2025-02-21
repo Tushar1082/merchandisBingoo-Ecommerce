@@ -58,12 +58,9 @@ export default function ProductOrderPage() {
       if(success){
         const dbRef = ref(fireDB, `MerchandiseBingoo/users/${userEmail}/orders/${invoiceNo}`);
         await deleteObject(dbRef);
-
-        setTimeout(()=>{
           setLoading(false);
-          alert(success);
+          // alert(success);
           window.location.reload();
-        },2000)
       }else if(fail){
         setLoading(false);
         alert("failed to cancel order");
@@ -106,9 +103,7 @@ export default function ProductOrderPage() {
   useEffect(()=>{
     setLoading(true);
     callData();
-    setTimeout(()=>{
       setLoading(false);
-    },1000)
   },[])
 
   return (
