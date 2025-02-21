@@ -85,9 +85,7 @@ export default function Wishlist() {
         setIsCart(!isCart);
         setLoading(true);
         handleList([obj], []);
-        setTimeout(()=>{
           setLoading(false);
-        },2000)
         // const p = new Promise((resolve, reject) => {
         //   resolve();
         // });
@@ -97,9 +95,7 @@ export default function Wishlist() {
         setIsCart(!isCart);
         setLoading(true);
         handleList([], [obj]);
-        setTimeout(()=>{
           setLoading(false);
-        },2000)
         // const p = new Promise((resolve, reject) => {
         //   resolve();
         // });
