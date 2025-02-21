@@ -86,16 +86,16 @@
     cursor: pointer;
   }
   #otherEventDiv1{
-    background: url("../../../../public/images/events/macbook.png"),radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+    background: url("../../../../public/images/events/macbook.webp"),radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
   }
   #otherEventDiv2{
-    background: url("../../../../public/images/events/television.png"),linear-gradient(109.6deg, rgb(255, 78, 80) 11.2%, rgb(249, 212, 35) 100.2%);;
+    background: url("../../../../public/images/events/television.webp"),linear-gradient(109.6deg, rgb(255, 78, 80) 11.2%, rgb(249, 212, 35) 100.2%);;
   }
   #otherEventDiv3{
-    background: url("../../../../public/images/events/alexa.jpg");
+    background: url("../../../../public/images/events/alexa.webp");
   }
   #otherEventDiv4{
-    background: url("../../../../public/images/events/earbuds.png"), linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    background: url("../../../../public/images/events/earbuds.webp"), linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
   }
   #otherEventDiv1,#otherEventDiv3,#otherEventDiv4{
     height: 12rem;
