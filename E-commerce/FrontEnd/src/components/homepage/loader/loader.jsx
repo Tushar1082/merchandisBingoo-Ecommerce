@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import "./loader.css";
 import loadingVideo from "/images/loading.mp4";
 
-export default function Loader(){
+export default function Loader({value}){
   useEffect(()=>{
     const disableInteractions = (event)=>{
       event.preventDefault();
@@ -19,7 +19,7 @@ export default function Loader(){
     };
   },[])
   return(
-    <div id='loadingDiv'>
+    <div id='loadingDiv' className={value?"loaderClass":''}>
         <video autoPlay muted src={loadingVideo} width="200px" loop alt="error" />
         <h3>Loading...</h3>
       </div>
