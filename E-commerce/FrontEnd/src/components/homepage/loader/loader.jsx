@@ -5,6 +5,9 @@ import loadingVideo from "/images/loading.mp4";
 
 export default function Loader({value}){
   useEffect(()=>{
+    if(value){
+      return;
+    }
     const disableInteractions = (event)=>{
       event.preventDefault();
       event.stopPropagation();
