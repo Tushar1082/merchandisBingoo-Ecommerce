@@ -405,8 +405,8 @@
         height: 30rem;
     }
     #userProfLoading_nav{
-        width: 35px;
-        height: 35px;
+        width: 27px;
+        height: 27px;
     }
 }
 @media(max-width:1200px) and (min-width:1000px){
