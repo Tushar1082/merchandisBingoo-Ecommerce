@@ -23,7 +23,9 @@ function Card({data,wishList,setLoading}){
     handleWishList();
     handleLikeList(likeList,removeLikeList);
     likeList.pop();
+    setTimeout(()=>{
         setLoading(false);
+    },1000)
   }
   const handleWishList = async() => {
     if(!fav){
@@ -276,6 +278,9 @@ export default function TopDeals(){
         const user = localStorage.getItem("MDB_USER_EMAIL_ID");
         const token = Cookies.get("token");
 
+        if(!user){
+          return;
+        }
         try {
             const res = await fetch(`${import.meta.env.VITE_REACT_API_URL}`);
             const finalRes = await res.json();
@@ -304,7 +309,7 @@ export default function TopDeals(){
     return(
     <>
      { data &&  <CreateEachDeals data={data} wishList={wishList} setLoading={setLoading}/>}
-     {loading?<Loader/>:""}
+     {loading?<Loader value={true}/>:""}
     </>
     
     )
