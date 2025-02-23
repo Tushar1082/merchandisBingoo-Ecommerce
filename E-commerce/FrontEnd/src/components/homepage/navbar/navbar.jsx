@@ -3,6 +3,19 @@ import {Link, useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import { useDispatch } from 'react-redux';
 import "./navbar.css";
+import cartImage from "/images/navbar/fastCart.png"
+import searchImage from "/images/navbar/search.png";
+import speechImage from "/images/navbar/speech.png";
+import userImage from "/images/navbar/user.png";
+import voiceRecognitionGif from "/images/navbar/voice recognition.gif";
+import wishlistImage from "/images/navbar/wishlist.png";
+import logo from "/images/navbar/logo.png";
+import accountImg from "/images/navbar/account.png";
+import addAddressImg from "/images/navbar/address.png";
+import cartImg from "/images/navbar/cart.png";
+import orderImg from "/images/navbar/order.png";
+import logoutImg from "/images/navbar/logout.png";
+import speechRecAudio from "/audio/speechStartVoice.mp3"
 import { Counting } from '../../../services/actions/actions.jsx';
 import { CountingLike } from '../../../services/actions/actions.jsx';
 import Cookies from 'js-cookie';
@@ -63,6 +76,9 @@ export async function handleLikeList(likeList,remLikeList){
 }
 
 export default function Navbar() {
+  // const logSignRef = useRef(null);
+  // const logginedRef = useRef(null);
+  // const userNameRef = useRef(null);
   const audioStartRef = useRef();
   const inputRef = useRef();
   const navigate = useNavigate();
@@ -112,7 +128,7 @@ export default function Navbar() {
         alert("failed to fetch user credentials");
         console.log(error);
       }finally{
-          setUserProfLoad(false);
+        setUserProfLoad(false);
       }
     }else{
       setShowUserProf(false);
@@ -182,20 +198,20 @@ export default function Navbar() {
     <div id='mainNav'>
         <div id='logoNav'>
         <Link to="/" style={{textDecoration:"none",color:"black"}}>
-          <img src="images/navbar/logo.png" alt="error" height="50px" />
+          <img src={logo} alt="error" height="50px" />
         </Link>
         </div>
         <div id='searchNav'>
-            <img src="images/navbar/search.png" style={{marginRight:"5px"}} alt="error" />
+            <img src={searchImage} style={{marginRight:"5px"}} alt="error" />
             <input type="text" placeholder='Search for product brand or more...' ref={inputRef} id='searchBox' onKeyDown={(e)=>e.key==="Enter"?window.location.href=`/search?search=${e.target.value}`:""}/>
 
             <div id='speechNavDiv'>
-              <img src="images/navbar/speech.png" alt="error" id='speechNav' onClick={handleSpeech}/> 
+              <img src={speechImage} alt="error" id='speechNav' onClick={handleSpeech}/> 
               <span>Search with your voice</span>
             </div>
 
            <audio ref={audioStartRef}>
-              <source src="audio/speechStartVoice.mp3" typeof='audio/mp3'/>
+              <source src={speechRecAudio} typeof='audio/mp3'/>
            </audio>   
         </div>
         <div id='user_Cart'>
@@ -215,34 +231,34 @@ export default function Navbar() {
             <div id="loggined">
               <h4 id="userName">{"Hello, "+ firstName(userName)}</h4>
               <div id='profileImgNavbar'>
-                <img src={img||"images/navbar/user.png"} alt="error" />
+                <img src={img||userImage} alt="error" />
               </div>
               <div id='optionsNav' >
-                  <Link to="/myAccount" ><img src="images/navbar/account.png" alt="error"/><span>My Account</span></Link>
-                  <Link to="/myOrders" ><img src="images/navbar/logout.png" alt="Error"/><span>My Orders</span></Link>
-                  <Link to="/cart" ><img src="images/navbar/cart.png" alt="Error"/><span>Cart</span></Link>
-                  <Link to="/addAddress" ><img src="images/navbar/address.png" alt="Error"/><span>Add Address</span></Link>
-                  <Link to="/" onClick={logout}><img src="images/navbar/logout.png" alt="Error"/><span>Logout</span></Link>
+                  <Link to="/myAccount" ><img src={accountImg} alt="error"/><span>My Account</span></Link>
+                  <Link to="/myOrders" ><img src={orderImg} alt="Error"/><span>My Orders</span></Link>
+                  <Link to="/cart" ><img src={cartImg} alt="Error"/><span>Cart</span></Link>
+                  <Link to="/addAddress" ><img src={addAddressImg} alt="Error"/><span>Add Address</span></Link>
+                  <Link to="/" onClick={logout}><img src={logoutImg} alt="Error"/><span>Logout</span></Link>
               </div>
             </div>)
               
             }
             
             {user && <div id='profileImgPhoneNav' onClick={()=>navigate("/myAccount")} >
-              <img src={img||"images/navbar/user.png"} alt="error" />
+              <img src={img||userImage} alt="error" />
             </div>}
           </div>
           <div id='wishlistNavbar'>
               <div>{isNaN(likeCount)?0:likeCount}</div>
               <Link to={user?"/wishlist":"/login"}>
-                <img src="images/navbar/wishlist.png" alt='error'/>
+                <img src={wishlistImage} alt='error'/>
               </Link>
               <span>wishlist</span>
           </div>
           <div id='cartNavbar'>
             <div>{isNaN(count) ? 0 : count}</div>
             <Link to={user?"/cart":"/login"}>
-              <img src="/images/navbar/fastCart.png" alt="error" />
+              <img src={cartImage} alt="error" />
             </Link>
             <span>your cartlist</span>
           </div>
@@ -250,7 +266,7 @@ export default function Navbar() {
     </div>
     {showGif&&
     <div className='voiceGifDiv'>
-      <img src="images/navbar/voice recognition.gif" alt="error" />
+      <img src={voiceRecognitionGif} alt="error" />
     </div>
     }
     </>
