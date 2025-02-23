@@ -346,6 +346,10 @@
 #speechNav{
     width: 25px;
 }
+#userProfLoading_nav{
+    width: 27px;
+    height: 27px;
+}
 }
 @media(max-width:360px)
 {
