@@ -63,9 +63,6 @@ export async function handleLikeList(likeList,remLikeList){
 }
 
 export default function Navbar() {
-  // const logSignRef = useRef(null);
-  // const logginedRef = useRef(null);
-  // const userNameRef = useRef(null);
   const audioStartRef = useRef();
   const inputRef = useRef();
   const navigate = useNavigate();
@@ -115,9 +112,7 @@ export default function Navbar() {
         alert("failed to fetch user credentials");
         console.log(error);
       }finally{
-        setTimeout(()=>{
           setUserProfLoad(false);
-        },1000);
       }
     }else{
       setShowUserProf(false);
