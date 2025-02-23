@@ -13,3 +13,9 @@
 #loadingDiv img{
     height: 100%;
 }
+.loaderClass{
+    position: static !important;
+    transform: unset !important;
+    width: fit-content !important;
+    margin: 5rem auto !important;
+}
