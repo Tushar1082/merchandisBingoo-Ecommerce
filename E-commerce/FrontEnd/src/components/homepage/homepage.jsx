@@ -1,11 +1,15 @@
-import React,{useEffect} from 'react';
+import React,{lazy, useEffect, Suspense} from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './navbar/navbar';
-import Slider,{SliderPhone} from './slider/slider';
+const Slider = lazy(()=>import('./slider/slider'));
+const SliderPhonePromise = import('./slider/slider').then(module => ({default: module.SliderPhone}));
+const SliderPhone = lazy(()=> SliderPhonePromise);
+// import Slider,{SliderPhone} from './slider/slider';
 import Categories from './categories/categories';
 import SpecialProduct from './specialProducts/specialProduct';
 import Events,{EventsPhone} from './events/events';
-import TopDeals from './topDeals/topDeals';
+const TopDeals = lazy(()=> import('./topDeals/topDeals'));
+// import TopDeals from './topDeals/topDeals';
 import Footer from './footer/footer';
 import accountImg from "/images/navbar/account.png";
 import addAddressImg from "/images/navbar/address.png";
@@ -16,7 +20,7 @@ import wishlistImg from '/images/navbar/wishlistPhone.png';
 import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
 import { showPayment } from '../../services/actions/actions';
-
+import Loader from './loader/loader';
 export default function Homepage() {
   const dispatch = useDispatch();
   
@@ -27,14 +31,24 @@ export default function Homepage() {
   return (
     <>
     <Navbar/>
+    <Suspense fallback={()=><Loader/>}>
       <Slider/>
+    </Suspense>
+
+    <Suspense fallback={()=><Loader/>}>
     <SliderPhone/>
+    </Suspense>
+    
     <Categories/>
     <SpecialProduct/>
-      <Events/>
+    <Events/>
     <EventsPhone/>
-    <TopDeals/>
-      <Footer/>
+    
+    <Suspense fallback={()=><Loader/>}>
+      <TopDeals/>
+    </Suspense>
+    
+    <Footer/>
     <PhoneFooter/>
     </>
   )
