@@ -7,7 +7,7 @@ const SliderPhone = lazy(()=> SliderPhonePromise);
 // import Slider,{SliderPhone} from './slider/slider';
 import Categories from './categories/categories';
 import SpecialProduct from './specialProducts/specialProduct';
-import Events,{EventsPhone} from './events/events';
+import Events from './events/events';
 const TopDeals = lazy(()=> import('./topDeals/topDeals'));
 // import TopDeals from './topDeals/topDeals';
 import Footer from './footer/footer';
@@ -42,7 +42,6 @@ export default function Homepage() {
     <Categories/>
     <SpecialProduct/>
     <Events/>
-    <EventsPhone/>
     
     <Suspense fallback={()=><Loader/>}>
       <TopDeals/>
