@@ -67,7 +67,6 @@ function OtherEvent() {
       tShirt: "/category/men/tShirts",
       saree: "/category/women/sarees",
       blazer: "/category/men/blazers",
-      book: "/category/book",
     };
     window.location.href = routes[str] || "/";
   }
@@ -116,16 +115,6 @@ function OtherEvent() {
             />
           </div>
         </div>
-          <div className="events_S" style={{margin:'auto'}} onClick={() => otherEventTemplate("book")}>
-            <img src="images/events/6.webp" alt="error" />
-            <img
-              src="images/events/bookOff.webp"
-              alt="error"
-              ref={(el) => (divImgRefs.current[4] = el)}
-              className="fade-image"
-              style={{ top: "52%", left: "50%", transform: "translate(-50%,-50%)" }}
-            />
-          </div>
       </div>
     </div>
   );
@@ -201,10 +190,10 @@ useEffect(()=>{
         <img src={blazerImgMobileView} alt="error" />
         <img src={blazerOffMobileView} alt="error" />
       </div>
-      <div id='bookOEP' ref={divImgRef5}>
+      {/*<div id='bookOEP' ref={divImgRef5}>
         <img src={bookImgMobileView} alt="error" />
         <img src={bookOffMobileView} alt="error" />
-      </div>
+      </div>*/}
     </div>
   )
 }
@@ -273,7 +262,7 @@ export default function Events() {
   return (
     <>
     <div id='mainEvent'>
-      <div className={`sliderEvent ${isTransitioning ? 'transitioning' : ''}`} >
+      {/* <div className={`sliderEvent ${isTransitioning ? 'transitioning' : ''}`} >
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
@@ -286,6 +275,18 @@ export default function Events() {
             <button key ={index} onClick={()=>handleChange(index)}></button>
           ))}
         </div>
+      </div> */}
+      <div 
+      // className="events_S" 
+      style={{position:'relative', cursor:'pointer'}}
+      onClick={()=>window.location.href="/category/book"}
+      >
+        <img src="images/events/6.webp" alt="error" style={{borderRadius:'10px'}} />
+        <img
+          src="images/events/bookOff.webp"
+          alt="error"
+          style={{ top: "50%", left: "50%", transform: "translate(-50%,-50%)", position:'absolute', width:'40%' }}
+        />
       </div>
       <div className='otherEvent'>
          <div id='otherEvent1'>
