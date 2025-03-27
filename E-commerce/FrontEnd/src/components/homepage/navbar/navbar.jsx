@@ -1,4 +1,4 @@
-import React,{useRef,useState,useEffect} from 'react';
+import React,{useRef,useState,useEffect, useCallback} from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import { useDispatch } from 'react-redux';
@@ -96,7 +96,7 @@ export default function Navbar() {
     const newStr = str.split(" ")[0];
     return newStr;
   }
-  async function callData(name, email, tokenVal){
+  const callData = useCallback(async (name, email, tokenVal)=>{
     const userName = name;
     const isUserLog = email;
     const token = tokenVal;
@@ -133,7 +133,8 @@ export default function Navbar() {
     }else{
       setShowUserProf(false);
     }
-  }
+  },[])
+  // async function callData
   
   useEffect(()=>{
     localStorage.setItem("MDB_USER_NAME", "rahul Sharma");
